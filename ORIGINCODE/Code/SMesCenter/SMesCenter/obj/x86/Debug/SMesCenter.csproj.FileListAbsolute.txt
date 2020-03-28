@@ -1,0 +1,13 @@
+D:\新建文件夹\17树林CODE\Code\SMesCenter\Launcher\SMesCenter.exe
+D:\新建文件夹\17树林CODE\Code\SMesCenter\Launcher\SMesCenter.pdb
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesCenter\obj\x86\Debug\SMesCenter.LoginForm.resources
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesCenter\obj\x86\Debug\SMesCenter.Properties.Resources.resources
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesCenter\obj\x86\Debug\SMesCenter.UserControls.OrganizationButton.resources
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesCenter\obj\x86\Debug\SMesCenter.UserControls.SMesTabControl.resources
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesCenter\obj\x86\Debug\SMesCenter.Workbench.resources
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesCenter\obj\x86\Debug\SMesCenter.csproj.GenerateResource.Cache
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesCenter\obj\x86\Debug\SMesCenter.exe
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesCenter\obj\x86\Debug\SMesCenter.pdb
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesCenter\obj\x86\Debug\SMesCenter.csprojResolveAssemblyReference.cache
+K:\17树林CODE\Code\SMesCenter\SMesCenter\obj\x86\Debug\SMesCenter.exe
+K:\17树林CODE\Code\SMesCenter\SMesCenter\obj\x86\Debug\SMesCenter.pdb

@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB8E5319-F07B-4472-8C39-26626119ED44}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMes.Controls</RootNamespace>
+    <AssemblyName>SMes.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Debug\SMes.Controls.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\RefDll\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 11.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppObject\ComboBoxDataSource.cs" />
+    <Compile Include="AppObject\DataGridViewColumnDataType.cs" />
+    <Compile Include="AppObject\DataGridViewColumnPopType.cs" />
+    <Compile Include="AppObject\DataGridViewRowStatus.cs" />
+    <Compile Include="AppObject\DataValidationType.cs" />
+    <Compile Include="AppObject\DGVRowUpdate.cs" />
+    <Compile Include="AppObject\LovFormExParameter.cs" />
+    <Compile Include="AppObject\LovType.cs" />
+    <Compile Include="AppObject\SysButtonClickedEventArgs.cs" />
+    <Compile Include="AppObject\SysButtonClickedEventHandler.cs" />
+    <Compile Include="AppObject\DataGridViewCustClickEventArgs.cs" />
+    <Compile Include="AppObject\DataGridViewCustClickEventHandler.cs" />
+    <Compile Include="AppObject\SystemTextBoxExChangedEventHandler.cs" />
+    <Compile Include="AppObject\SystemTextBoxExChangedEventArgs.cs" />
+    <Compile Include="ButtonEx.cs" />
+    <Compile Include="ButtonEx.Designer.cs">
+      <DependentUpon>ButtonEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarButtonEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalendarButtonEx.Designer.cs">
+      <DependentUpon>CalendarButtonEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckBoxEx.cs" />
+    <Compile Include="CheckBoxEx.Designer.cs">
+      <DependentUpon>CheckBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBoxEx.cs" />
+    <Compile Include="ComboBoxEx.Designer.cs">
+      <DependentUpon>ComboBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewComboBoxExCell.cs" />
+    <Compile Include="DataGridViewComboBoxExCell.Designer.cs">
+      <DependentUpon>DataGridViewComboBoxExCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewComboBoxExColumn.cs" />
+    <Compile Include="DataGridViewComboBoxExColumn.Designer.cs">
+      <DependentUpon>DataGridViewComboBoxExColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewEx.cs" />
+    <Compile Include="DataGridViewEx.Designer.cs">
+      <DependentUpon>DataGridViewEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewExRow.cs" />
+    <Compile Include="DataGridViewExRow.Designer.cs">
+      <DependentUpon>DataGridViewExRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewTextBoxExCell.cs" />
+    <Compile Include="DataGridViewTextBoxExCell.Designer.cs">
+      <DependentUpon>DataGridViewTextBoxExCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewTextBoxExColumn.cs" />
+    <Compile Include="DataGridViewTextBoxExColumn.Designer.cs">
+      <DependentUpon>DataGridViewTextBoxExColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendForm\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendForm\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendForm\BaseQueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendForm\BaseQueryForm.Designer.cs">
+      <DependentUpon>BaseQueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppForm\FindContentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppForm\FindContentForm.Designer.cs">
+      <DependentUpon>FindContentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppForm\ShowSqlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppForm\ShowSqlForm.Designer.cs">
+      <DependentUpon>ShowSqlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GroupBoxEx.Designer.cs">
+      <DependentUpon>GroupBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IValidate.cs" />
+    <Compile Include="LableEx.cs" />
+    <Compile Include="LableEx.Designer.cs">
+      <DependentUpon>LableEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LovButtonEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LovButtonEx.Designer.cs">
+      <DependentUpon>LovButtonEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LovFormEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LovFormEx.Designer.cs">
+      <DependentUpon>LovFormEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MesPaletteEx.cs" />
+    <Compile Include="MesPaletteEx.Designer.cs">
+      <DependentUpon>MesPaletteEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthCalendarEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MonthCalendarEx.Designer.cs">
+      <DependentUpon>MonthCalendarEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultirowInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultirowInputForm.Designer.cs">
+      <DependentUpon>MultirowInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigatorEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigatorEx.Designer.cs">
+      <DependentUpon>NavigatorEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumericUpDownEx.cs" />
+    <Compile Include="NumericUpDownEx.Designer.cs">
+      <DependentUpon>NumericUpDownEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelEx.cs" />
+    <Compile Include="PanelEx.Designer.cs">
+      <DependentUpon>PanelEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RadioButtonEx.cs" />
+    <Compile Include="RadioButtonEx.Designer.cs">
+      <DependentUpon>RadioButtonEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxEx.cs" />
+    <Compile Include="RichTextBoxEx.Designer.cs">
+      <DependentUpon>RichTextBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplitContainerEx.cs" />
+    <Compile Include="SplitContainerEx.Designer.cs">
+      <DependentUpon>SplitContainerEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusStripBarEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatusStripBarEx.Designer.cs">
+      <DependentUpon>StatusStripBarEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxEx.cs" />
+    <Compile Include="TextBoxEx.Designer.cs">
+      <DependentUpon>TextBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolStripEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStripEx.Designer.cs">
+      <DependentUpon>ToolStripEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\ControlHelper.cs" />
+    <Compile Include="Utility\DataGridViewContentMenuService.cs" />
+    <Compile Include="Utility\FormHelper.cs" />
+    <Compile Include="Utility\ValidationService.cs" />
+    <Compile Include="MultipleRowButtonEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultipleRowButtonEx.Designer.cs">
+      <DependentUpon>MultipleRowButtonEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckComboBoxButtonEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckComboBoxButtonEx.Designer.cs">
+      <DependentUpon>CheckComboBoxButtonEx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CalendarButtonEx.resx">
+      <DependentUpon>CalendarButtonEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendForm\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendForm\BaseQueryForm.resx">
+      <DependentUpon>BaseQueryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppForm\FindContentForm.resx">
+      <DependentUpon>FindContentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppForm\ShowSqlForm.resx">
+      <DependentUpon>ShowSqlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LovButtonEx.resx">
+      <DependentUpon>LovButtonEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LovFormEx.resx">
+      <DependentUpon>LovFormEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthCalendarEx.resx">
+      <DependentUpon>MonthCalendarEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultirowInputForm.resx">
+      <DependentUpon>MultirowInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigatorEx.resx">
+      <DependentUpon>NavigatorEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusStripBarEx.resx">
+      <DependentUpon>StatusStripBarEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultipleRowButtonEx.resx">
+      <DependentUpon>MultipleRowButtonEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckComboBoxButtonEx.resx">
+      <DependentUpon>CheckComboBoxButtonEx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMes.Core\SMes.Core.csproj">
+      <Project>{7ddd1a40-0294-4e76-bd0f-e91144742b4d}</Project>
+      <Name>SMes.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Query.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AllCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LastPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NextPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrePage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalendarBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FileUpload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MulDataBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalendarBtnDisable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchBtnDisable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnQuery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultipleNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultipleDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultipleNormalDisable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckComboBoxBtnDisable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckComboBoxBtnDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckComboBoxBtnNormal.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

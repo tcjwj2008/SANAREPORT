@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="gb2312"?>
+
+<daisy>
+	<services>
+		<service class="com.smes.mw.protocol.configuration.ConfigureService">
+			<init-param>
+				<param-name>processorConfig</param-name>
+				<param-value>protocol.properties</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>configSqlProperties</param-name>
+				<param-value>protocol.properties</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>cacheConfig</param-name>
+				<param-value>protocolCache.xml</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>dataBaseConnectionConfig</param-name>
+				<param-value>DataBaseConfig.xml</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>log4jXmlConfig</param-name>
+				<param-value>log4j.xml</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>log4jPropertiesConfig</param-name>
+				<param-value>log4j.properties</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>separator</param-name>
+				<param-value>@@@</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>encoding</param-name>
+				<param-value>UTF-8</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>connPoolName</param-name>
+				<param-value>daisy</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>isRequestRefused</param-name>
+				<param-value>false</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>maxInactiveInterval</param-name>
+				<param-value>50000</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>isSessionIdRequired</param-name>
+				<param-value>true</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>isClientStatementPermitted</param-name>
+				<param-value>true</param-value>
+			</init-param>
+
+			<init-param>
+				<param-name>isStatistic</param-name>
+				<param-value>true</param-value>
+			</init-param>
+
+		</service>
+
+	</services>
+
+</daisy>

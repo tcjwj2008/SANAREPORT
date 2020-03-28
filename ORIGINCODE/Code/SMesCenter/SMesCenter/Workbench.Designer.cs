@@ -1,0 +1,451 @@
+﻿namespace SMesCenter
+{
+    partial class Workbench
+    {
+        /// <summary>
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows 窗体设计器生成的代码
+
+        /// <summary>
+        /// 设计器支持所需的方法 - 不要
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Workbench));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.menuSMain = new System.Windows.Forms.MenuStrip();
+            this.toolSMain = new System.Windows.Forms.ToolStrip();
+            this.panelEx1 = new SMes.Controls.PanelEx(this.components);
+            this.splitContainerEx1 = new SMes.Controls.SplitContainerEx(this.components);
+            this.bgOrgs = new SMes.Controls.GroupBoxEx(this.components);
+            this.dgvSubMenu = new SMes.Controls.DataGridViewEx(this.components);
+            this.ColSeq = new SMes.Controls.DataGridViewTextBoxExColumn(this.components);
+            this.ColFunctionId = new SMes.Controls.DataGridViewTextBoxExColumn(this.components);
+            this.ColMenuName = new SMes.Controls.DataGridViewTextBoxExColumn(this.components);
+            this.ColMenuCode = new SMes.Controls.DataGridViewTextBoxExColumn(this.components);
+            this.ColExePath = new SMes.Controls.DataGridViewTextBoxExColumn(this.components);
+            this.ColItOwner = new SMes.Controls.DataGridViewTextBoxExColumn(this.components);
+            this.ColFunctionGroup = new SMes.Controls.DataGridViewTextBoxExColumn(this.components);
+            this.ColAssemblyEntryCount = new SMes.Controls.DataGridViewTextBoxExColumn(this.components);
+            this.ssStatus = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslUserName = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslLoaderConfigStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslNewVersionIcon = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslNewVersionAlert = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timerReflash = new System.Windows.Forms.Timer(this.components);
+            this.bgwDoReflash = new System.ComponentModel.BackgroundWorker();
+            this.smTabControl = new SMesCenter.UserControls.SMesTabControl();
+            ((System.ComponentModel.ISupportInitialize)(this.panelEx1)).BeginInit();
+            this.panelEx1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerEx1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerEx1.Panel1)).BeginInit();
+            this.splitContainerEx1.Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerEx1.Panel2)).BeginInit();
+            this.splitContainerEx1.Panel2.SuspendLayout();
+            this.splitContainerEx1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSubMenu)).BeginInit();
+            this.ssStatus.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // menuSMain
+            // 
+            this.menuSMain.Font = new System.Drawing.Font("Arial", 10.5F);
+            this.menuSMain.Location = new System.Drawing.Point(0, 0);
+            this.menuSMain.Name = "menuSMain";
+            this.menuSMain.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuSMain.Size = new System.Drawing.Size(1264, 30);
+            this.menuSMain.TabIndex = 0;
+            this.menuSMain.Visible = false;
+            // 
+            // toolSMain
+            // 
+            this.toolSMain.Font = new System.Drawing.Font("Arial", 10F);
+            this.toolSMain.Location = new System.Drawing.Point(0, 0);
+            this.toolSMain.Name = "toolSMain";
+            this.toolSMain.Size = new System.Drawing.Size(1395, 25);
+            this.toolSMain.TabIndex = 1;
+            this.toolSMain.Text = "toolStrip1";
+            // 
+            // panelEx1
+            // 
+            this.panelEx1.AutoScroll = true;
+            this.panelEx1.Controls.Add(this.splitContainerEx1);
+            this.panelEx1.Controls.Add(this.ssStatus);
+            this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEx1.Location = new System.Drawing.Point(0, 25);
+            this.panelEx1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelEx1.Name = "panelEx1";
+            this.panelEx1.Size = new System.Drawing.Size(1395, 660);
+            this.panelEx1.TabIndex = 2;
+            // 
+            // splitContainerEx1
+            // 
+            this.splitContainerEx1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.splitContainerEx1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerEx1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainerEx1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerEx1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainerEx1.Name = "splitContainerEx1";
+            // 
+            // splitContainerEx1.Panel1
+            // 
+            this.splitContainerEx1.Panel1.Controls.Add(this.bgOrgs);
+            // 
+            // splitContainerEx1.Panel2
+            // 
+            this.splitContainerEx1.Panel2.Controls.Add(this.dgvSubMenu);
+            this.splitContainerEx1.Panel2.Controls.Add(this.smTabControl);
+            this.splitContainerEx1.Size = new System.Drawing.Size(1395, 635);
+            this.splitContainerEx1.SplitterDistance = 200;
+            this.splitContainerEx1.TabIndex = 1;
+            // 
+            // bgOrgs
+            // 
+            this.bgOrgs.BackColor = System.Drawing.Color.Transparent;
+            this.bgOrgs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bgOrgs.Location = new System.Drawing.Point(0, 0);
+            this.bgOrgs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bgOrgs.Name = "bgOrgs";
+            this.bgOrgs.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bgOrgs.Size = new System.Drawing.Size(200, 635);
+            this.bgOrgs.TabIndex = 0;
+            this.bgOrgs.TabStop = false;
+            this.bgOrgs.Text = "切换组织";
+            // 
+            // dgvSubMenu
+            // 
+            this.dgvSubMenu.AllowUserToAddRows = false;
+            this.dgvSubMenu.AllowUserToDeleteRows = false;
+            this.dgvSubMenu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColSeq,
+            this.ColFunctionId,
+            this.ColMenuName,
+            this.ColMenuCode,
+            this.ColExePath,
+            this.ColItOwner,
+            this.ColFunctionGroup,
+            this.ColAssemblyEntryCount});
+            this.dgvSubMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSubMenu.ErrorRowList = ((System.Collections.Generic.List<int>)(resources.GetObject("dgvSubMenu.ErrorRowList")));
+            this.dgvSubMenu.IsMergeColumn = false;
+            this.dgvSubMenu.Location = new System.Drawing.Point(0, 45);
+            this.dgvSubMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvSubMenu.Name = "dgvSubMenu";
+            this.dgvSubMenu.RowTemplate.Height = 23;
+            this.dgvSubMenu.Size = new System.Drawing.Size(1190, 590);
+            this.dgvSubMenu.TabIndex = 1;
+            this.dgvSubMenu.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSubMenu_CellDoubleClick);
+            // 
+            // ColSeq
+            // 
+            this.ColSeq.Alterable = true;
+            this.ColSeq.DataType = SMes.Controls.AppObject.DataGridViewColumnDataType.NONE;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ColSeq.DefaultCellStyle = dataGridViewCellStyle1;
+            this.ColSeq.HeaderText = "序号";
+            this.ColSeq.IsShowTimeDetail = false;
+            this.ColSeq.LovParameter = null;
+            this.ColSeq.MustNeeded = false;
+            this.ColSeq.Name = "ColSeq";
+            this.ColSeq.PopType = SMes.Controls.AppObject.DataGridViewColumnPopType.NONE;
+            this.ColSeq.PopTypeSide = System.Windows.Forms.LeftRightAlignment.Right;
+            this.ColSeq.ReadOnly = true;
+            this.ColSeq.ValidationType = SMes.Controls.AppObject.DataValidationType.NONE;
+            this.ColSeq.Width = 70;
+            // 
+            // ColFunctionId
+            // 
+            this.ColFunctionId.Alterable = true;
+            this.ColFunctionId.DataType = SMes.Controls.AppObject.DataGridViewColumnDataType.NONE;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ColFunctionId.DefaultCellStyle = dataGridViewCellStyle2;
+            this.ColFunctionId.HeaderText = "FunctionId";
+            this.ColFunctionId.IsShowTimeDetail = false;
+            this.ColFunctionId.LovParameter = null;
+            this.ColFunctionId.MustNeeded = false;
+            this.ColFunctionId.Name = "ColFunctionId";
+            this.ColFunctionId.PopType = SMes.Controls.AppObject.DataGridViewColumnPopType.NONE;
+            this.ColFunctionId.PopTypeSide = System.Windows.Forms.LeftRightAlignment.Right;
+            this.ColFunctionId.ReadOnly = true;
+            this.ColFunctionId.ValidationType = SMes.Controls.AppObject.DataValidationType.NONE;
+            this.ColFunctionId.Visible = false;
+            // 
+            // ColMenuName
+            // 
+            this.ColMenuName.Alterable = true;
+            this.ColMenuName.DataType = SMes.Controls.AppObject.DataGridViewColumnDataType.NONE;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ColMenuName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ColMenuName.HeaderText = "菜单名称";
+            this.ColMenuName.IsShowTimeDetail = false;
+            this.ColMenuName.LovParameter = null;
+            this.ColMenuName.MustNeeded = false;
+            this.ColMenuName.Name = "ColMenuName";
+            this.ColMenuName.PopType = SMes.Controls.AppObject.DataGridViewColumnPopType.NONE;
+            this.ColMenuName.PopTypeSide = System.Windows.Forms.LeftRightAlignment.Right;
+            this.ColMenuName.ReadOnly = true;
+            this.ColMenuName.ValidationType = SMes.Controls.AppObject.DataValidationType.NONE;
+            this.ColMenuName.Width = 200;
+            // 
+            // ColMenuCode
+            // 
+            this.ColMenuCode.Alterable = true;
+            this.ColMenuCode.DataType = SMes.Controls.AppObject.DataGridViewColumnDataType.NONE;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ColMenuCode.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ColMenuCode.HeaderText = "菜单编码";
+            this.ColMenuCode.IsShowTimeDetail = false;
+            this.ColMenuCode.LovParameter = null;
+            this.ColMenuCode.MustNeeded = false;
+            this.ColMenuCode.Name = "ColMenuCode";
+            this.ColMenuCode.PopType = SMes.Controls.AppObject.DataGridViewColumnPopType.NONE;
+            this.ColMenuCode.PopTypeSide = System.Windows.Forms.LeftRightAlignment.Right;
+            this.ColMenuCode.ReadOnly = true;
+            this.ColMenuCode.ValidationType = SMes.Controls.AppObject.DataValidationType.NONE;
+            this.ColMenuCode.Width = 180;
+            // 
+            // ColExePath
+            // 
+            this.ColExePath.Alterable = false;
+            this.ColExePath.DataType = SMes.Controls.AppObject.DataGridViewColumnDataType.NONE;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ColExePath.DefaultCellStyle = dataGridViewCellStyle5;
+            this.ColExePath.HeaderText = "执行路径";
+            this.ColExePath.IsShowTimeDetail = false;
+            this.ColExePath.LovParameter = null;
+            this.ColExePath.MustNeeded = false;
+            this.ColExePath.Name = "ColExePath";
+            this.ColExePath.PopType = SMes.Controls.AppObject.DataGridViewColumnPopType.NONE;
+            this.ColExePath.PopTypeSide = System.Windows.Forms.LeftRightAlignment.Right;
+            this.ColExePath.ReadOnly = true;
+            this.ColExePath.ValidationType = SMes.Controls.AppObject.DataValidationType.NONE;
+            this.ColExePath.Visible = false;
+            // 
+            // ColItOwner
+            // 
+            this.ColItOwner.Alterable = true;
+            this.ColItOwner.DataType = SMes.Controls.AppObject.DataGridViewColumnDataType.NONE;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ColItOwner.DefaultCellStyle = dataGridViewCellStyle6;
+            this.ColItOwner.HeaderText = "IT负责人";
+            this.ColItOwner.IsShowTimeDetail = false;
+            this.ColItOwner.LovParameter = null;
+            this.ColItOwner.MustNeeded = false;
+            this.ColItOwner.Name = "ColItOwner";
+            this.ColItOwner.PopType = SMes.Controls.AppObject.DataGridViewColumnPopType.NONE;
+            this.ColItOwner.PopTypeSide = System.Windows.Forms.LeftRightAlignment.Right;
+            this.ColItOwner.ReadOnly = true;
+            this.ColItOwner.ValidationType = SMes.Controls.AppObject.DataValidationType.NONE;
+            this.ColItOwner.Width = 120;
+            // 
+            // ColFunctionGroup
+            // 
+            this.ColFunctionGroup.Alterable = true;
+            this.ColFunctionGroup.DataType = SMes.Controls.AppObject.DataGridViewColumnDataType.NONE;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ColFunctionGroup.DefaultCellStyle = dataGridViewCellStyle7;
+            this.ColFunctionGroup.HeaderText = "模块";
+            this.ColFunctionGroup.IsShowTimeDetail = false;
+            this.ColFunctionGroup.LovParameter = null;
+            this.ColFunctionGroup.MustNeeded = false;
+            this.ColFunctionGroup.Name = "ColFunctionGroup";
+            this.ColFunctionGroup.PopType = SMes.Controls.AppObject.DataGridViewColumnPopType.NONE;
+            this.ColFunctionGroup.PopTypeSide = System.Windows.Forms.LeftRightAlignment.Right;
+            this.ColFunctionGroup.ReadOnly = true;
+            this.ColFunctionGroup.ValidationType = SMes.Controls.AppObject.DataValidationType.NONE;
+            // 
+            // ColAssemblyEntryCount
+            // 
+            this.ColAssemblyEntryCount.Alterable = true;
+            this.ColAssemblyEntryCount.DataType = SMes.Controls.AppObject.DataGridViewColumnDataType.NUMBER;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ColAssemblyEntryCount.DefaultCellStyle = dataGridViewCellStyle8;
+            this.ColAssemblyEntryCount.HeaderText = "使用次数";
+            this.ColAssemblyEntryCount.IsShowTimeDetail = false;
+            this.ColAssemblyEntryCount.LovParameter = null;
+            this.ColAssemblyEntryCount.MustNeeded = false;
+            this.ColAssemblyEntryCount.Name = "ColAssemblyEntryCount";
+            this.ColAssemblyEntryCount.PopType = SMes.Controls.AppObject.DataGridViewColumnPopType.NONE;
+            this.ColAssemblyEntryCount.PopTypeSide = System.Windows.Forms.LeftRightAlignment.Right;
+            this.ColAssemblyEntryCount.ReadOnly = true;
+            this.ColAssemblyEntryCount.ValidationType = SMes.Controls.AppObject.DataValidationType.NONE;
+            this.ColAssemblyEntryCount.Width = 80;
+            // 
+            // ssStatus
+            // 
+            this.ssStatus.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ssStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.tsslUserName,
+            this.toolStripStatusLabel2,
+            this.tsslLoaderConfigStatus,
+            this.toolStripStatusLabel3,
+            this.tsslNewVersionIcon,
+            this.tsslNewVersionAlert});
+            this.ssStatus.Location = new System.Drawing.Point(0, 635);
+            this.ssStatus.Name = "ssStatus";
+            this.ssStatus.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.ssStatus.Size = new System.Drawing.Size(1395, 25);
+            this.ssStatus.TabIndex = 0;
+            this.ssStatus.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(103, 20);
+            this.toolStripStatusLabel1.Text = "当前登陆用户:";
+            // 
+            // tsslUserName
+            // 
+            this.tsslUserName.Name = "tsslUserName";
+            this.tsslUserName.Size = new System.Drawing.Size(0, 20);
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.AutoSize = false;
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(200, 20);
+            // 
+            // tsslLoaderConfigStatus
+            // 
+            this.tsslLoaderConfigStatus.Name = "tsslLoaderConfigStatus";
+            this.tsslLoaderConfigStatus.Size = new System.Drawing.Size(0, 20);
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.AutoSize = false;
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(130, 20);
+            // 
+            // tsslNewVersionIcon
+            // 
+            this.tsslNewVersionIcon.Image = global::SMesCenter.Properties.Resources.NewVersionAlert;
+            this.tsslNewVersionIcon.Name = "tsslNewVersionIcon";
+            this.tsslNewVersionIcon.Size = new System.Drawing.Size(16, 20);
+            this.tsslNewVersionIcon.Visible = false;
+            // 
+            // tsslNewVersionAlert
+            // 
+            this.tsslNewVersionAlert.Name = "tsslNewVersionAlert";
+            this.tsslNewVersionAlert.Size = new System.Drawing.Size(0, 20);
+            // 
+            // timerReflash
+            // 
+            this.timerReflash.Interval = 300000;
+            this.timerReflash.Tick += new System.EventHandler(this.timerReflash_Tick);
+            // 
+            // bgwDoReflash
+            // 
+            this.bgwDoReflash.WorkerSupportsCancellation = true;
+            this.bgwDoReflash.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgwDoReflash_DoWork);
+            this.bgwDoReflash.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgwDoReflash_RunWorkerCompleted);
+            // 
+            // smTabControl
+            // 
+            this.smTabControl.ActiveButtonIndex = -1;
+            this.smTabControl.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.smTabControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.smTabControl.Location = new System.Drawing.Point(0, 0);
+            this.smTabControl.Margin = new System.Windows.Forms.Padding(5);
+            this.smTabControl.Name = "smTabControl";
+            this.smTabControl.Size = new System.Drawing.Size(1190, 45);
+            this.smTabControl.TabIndex = 0;
+            // 
+            // Workbench
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1395, 685);
+            this.Controls.Add(this.panelEx1);
+            this.Controls.Add(this.toolSMain);
+            this.Controls.Add(this.menuSMain);
+            this.MainMenuStrip = this.menuSMain;
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Name = "Workbench";
+            this.Text = "SMes";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Workbench_FormClosing);
+            this.Load += new System.EventHandler(this.Workbench_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.panelEx1)).EndInit();
+            this.panelEx1.ResumeLayout(false);
+            this.panelEx1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerEx1.Panel1)).EndInit();
+            this.splitContainerEx1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerEx1.Panel2)).EndInit();
+            this.splitContainerEx1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerEx1)).EndInit();
+            this.splitContainerEx1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSubMenu)).EndInit();
+            this.ssStatus.ResumeLayout(false);
+            this.ssStatus.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.MenuStrip menuSMain;
+        private System.Windows.Forms.ToolStrip toolSMain;
+        private SMes.Controls.PanelEx panelEx1;
+        private SMes.Controls.SplitContainerEx splitContainerEx1;
+        private SMes.Controls.GroupBoxEx bgOrgs;
+        private System.Windows.Forms.StatusStrip ssStatus;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel tsslUserName;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel tsslLoaderConfigStatus;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel tsslNewVersionAlert;
+        private System.Windows.Forms.Timer timerReflash;
+        private System.ComponentModel.BackgroundWorker bgwDoReflash;
+        private System.Windows.Forms.ToolStripStatusLabel tsslNewVersionIcon;
+        private UserControls.SMesTabControl smTabControl;
+        private SMes.Controls.DataGridViewEx dgvSubMenu;
+        private SMes.Controls.DataGridViewTextBoxExColumn ColSeq;
+        private SMes.Controls.DataGridViewTextBoxExColumn ColFunctionId;
+        private SMes.Controls.DataGridViewTextBoxExColumn ColMenuName;
+        private SMes.Controls.DataGridViewTextBoxExColumn ColMenuCode;
+        private SMes.Controls.DataGridViewTextBoxExColumn ColExePath;
+        private SMes.Controls.DataGridViewTextBoxExColumn ColItOwner;
+        private SMes.Controls.DataGridViewTextBoxExColumn ColFunctionGroup;
+        private SMes.Controls.DataGridViewTextBoxExColumn ColAssemblyEntryCount;
+
+    }
+}
+

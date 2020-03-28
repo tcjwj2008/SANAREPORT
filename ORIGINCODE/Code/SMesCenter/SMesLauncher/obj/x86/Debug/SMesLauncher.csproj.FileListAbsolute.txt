@@ -1,0 +1,7 @@
+D:\新建文件夹\17树林CODE\Code\SMesCenter\Launcher\SMesLauncher.exe
+D:\新建文件夹\17树林CODE\Code\SMesCenter\Launcher\SMesLauncher.pdb
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesLauncher\obj\x86\Debug\SMesLauncher.Properties.Resources.resources
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesLauncher\obj\x86\Debug\SMesLauncher.UpgradeForm.resources
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesLauncher\obj\x86\Debug\SMesLauncher.csproj.GenerateResource.Cache
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesLauncher\obj\x86\Debug\SMesLauncher.exe
+D:\新建文件夹\17树林CODE\Code\SMesCenter\SMesLauncher\obj\x86\Debug\SMesLauncher.pdb

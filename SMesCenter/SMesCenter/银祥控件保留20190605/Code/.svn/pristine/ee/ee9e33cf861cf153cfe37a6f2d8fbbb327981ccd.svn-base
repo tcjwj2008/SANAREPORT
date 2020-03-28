@@ -1,0 +1,214 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Reflection;
+using System.Windows.Forms;
+using System.Diagnostics;
+using System.IO;
+using System.Net;
+
+namespace SMes.Core.AppObj
+{
+    public enum CommandExeType
+    {
+        PluginCommand,
+        CSExeCommand,
+        DephiExeCommand
+    }
+
+    public class ExecuteCommand
+    {
+        private CommandExeType _comExeType = CommandExeType.PluginCommand;
+
+        private string _exePath = string.Empty;
+        private string _functionCode = string.Empty;
+        private string _windowType = string.Empty;
+        private string _orgCode = string.Empty;
+
+        public CommandExeType ComExeType
+        {
+            get { return _comExeType; }
+            set { _comExeType = value; }
+        }
+
+        public ExecuteCommand(CommandExeType exeType,string functionCode,string orgCode,string windowType,string exePath)
+        {
+            _comExeType = exeType;
+            _exePath = exePath;
+            _functionCode = functionCode;
+            _orgCode = orgCode;
+            _windowType = windowType;
+        }
+
+        public void Execute()
+        {
+            if (_comExeType == CommandExeType.PluginCommand)
+            {
+                PluginCall();
+            }
+            else if (_comExeType == CommandExeType.CSExeCommand)
+            {
+                CSExeCall();
+            }
+            else if (_comExeType == CommandExeType.DephiExeCommand)
+            {
+                DelphiExeCall();
+            }
+        }
+
+        private void DelphiExeCall()
+        {
+            //Delphi 要将配置文档拷贝到c盘
+            //路径：厂区编码/程序集名称文件夹/exe
+            try
+            {
+                //////从服务器的厂区编码/CIM/ReportCenter.ini ，下载到本地的C:/CIM
+                string iniFile = _orgCode + "/CIM/ReportCenter.ini";
+                bool downLoad = DelphiIniDownload(iniFile, "C:/CIM/ReportCenter.ini");
+                if (!downLoad)
+                {
+                    MessageBox.Show("下载当前厂区(" + SMes.Core.Config.ApplicationConfig.GetProperty("CURRENT_ORG_NAME") + ")的Delphi配置文件失败，请联系管理员", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                string exePath = SMes.Core.Config.ApplicationConfig.GetProperty("ApplicationRootPath") + "/" + _orgCode + "/" + _functionCode + "/" + _exePath;
+                ProcessStartInfo fileInfo = new ProcessStartInfo(exePath, SMes.Core.Config.ApplicationConfig.GetCurrentUser().UserName);
+                Process.Start(fileInfo);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private bool DelphiIniDownload(string fileName,string targetPath)
+        {
+            string basePath = "http://" + SMes.Core.Config.ApplicationConfig.GetProperty("host") + ":" + SMes.Core.Config.ApplicationConfig.GetProperty("port") + "/" + SMes.Core.Config.ApplicationConfig.GetProperty("updatePath");
+            string downloadfix = "?action=downloadFile&version=-1&file=";
+
+
+            FileStream fs = null;
+            HttpWebRequest request = (HttpWebRequest)System.Net.HttpWebRequest.Create(basePath + downloadfix + fileName);
+            request.Proxy = null;
+            try
+            {
+                using (Stream ns = request.GetResponse().GetResponseStream())
+                {
+                    Byte[] nbytes = new byte[1024];
+                    int nReadSize = 0;
+                    nReadSize = ns.Read(nbytes, 0, nbytes.Length);
+                    if (nbytes[0] == '!' && nbytes[1] == '!')
+                    {
+                        return false;
+                    }
+                    //////看文件夹存不存在，不存在就创建
+                    string filePath = targetPath;
+                    string dirPath;
+                    ////使用/截取
+                    int index = filePath.LastIndexOf('/');
+                    if (index > 0)
+                    {
+                        dirPath = filePath.Substring(0, index);
+                        ///判断目录是否存在，不存在则进行创建
+                        if (!Directory.Exists(dirPath))
+                        {
+                            Directory.CreateDirectory(dirPath);
+                        }
+                    }
+                    while (nReadSize > 0)
+                    {
+                        if (fs == null)
+                        {
+                            try
+                            {
+                                fs = new FileStream(filePath, FileMode.Create);
+                            }
+                            catch (Exception)
+                            {
+                                return false;
+                            }
+                        }
+                        fs.Write(nbytes, 0, nReadSize);
+                        nReadSize = ns.Read(nbytes, 0, nbytes.Length);
+                    }
+                    if (fs != null)
+                    {
+                        fs.Flush();
+                        fs.Close();
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private void CSExeCall()
+        {
+            //路径：厂区编码/程序集名称文件夹/exe
+            try
+            {
+                string exePath = SMes.Core.Config.ApplicationConfig.GetProperty("ApplicationRootPath") + "/" + _orgCode + "/" + _functionCode + "/" + _exePath;
+                ProcessStartInfo fileInfo = new ProcessStartInfo(exePath, SMes.Core.Config.ApplicationConfig.GetCurrentUser().UserName);
+                Process.Start(fileInfo);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void PluginCall()
+        {
+            try
+            {
+                string[] strArray = _exePath.Split('$');
+                string assambleName = strArray[0];
+                string className = strArray[1];
+
+
+                /////////
+
+                Assembly assembly = Assembly.LoadFile(SMes.Core.Config.ApplicationConfig.GetProperty("ApplicationRootPath") + "/" + assambleName);
+
+                //////////根据functioncode和厂区code，是否有设置了数据源，如果没有，则报错
+                string key = assembly.GetName().Name + _orgCode;
+                DataSourceAccess da = ApplicationCache.ConnectionCache.GetConnection(key);
+                if (da == null)
+                {
+                    MessageBox.Show("该功能在当前厂区(" + SMes.Core.Config.ApplicationConfig.GetProperty("CURRENT_ORG_NAME") + ")没有设置访问库，请联系管理员", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                //////
+
+                Type type = assembly.GetType(className);
+                if (type.GetInterface("IMesPlugin") != null)
+                {
+                    SMes.Core.Interface.IMesPlugin plugin = null;
+
+                    plugin = (SMes.Core.Interface.IMesPlugin)Activator.CreateInstance(type);
+                    plugin.Application = SMes.Core.ApplicationCache.GlobalCache.Application;
+                    SMes.Core.Utility.FormHelper.ShowFormType = _windowType;
+                    SMes.Core.Utility.FormHelper.ShowFormAccessDBName = string.Empty;
+                    if (da.Con != null && da.Con.Config != null && !string.IsNullOrEmpty(da.Con.Config.DatasourceName))
+                    {
+                        SMes.Core.Utility.FormHelper.ShowFormAccessDBName = da.Con.Config.DatasourceName;
+                    }
+                    plugin.Load();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+    }
+}

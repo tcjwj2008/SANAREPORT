@@ -1,0 +1,3 @@
+processor.sql_call=com.smes.mw.protocol.processors.SQLProcessor,com.smes.mw.protocol.DbTransaction
+processor.ping=com.smes.mw.protocol.processors.PingProcessor,com.smes.mw.protocol.DbTransaction
+processor.transaction=com.smes.mw.protocol.processors.TxnProcessor,com.smes.mw.protocol.DbTransaction

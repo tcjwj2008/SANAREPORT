@@ -1,0 +1,686 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SMes.Core</name>
+    </assembly>
+    <members>
+        <member name="F:SMes.Core.Service.DataBaseAccess.sMesBaseConnection">
+            <summary>
+            连接类
+            </summary>
+        </member>
+        <member name="M:SMes.Core.Service.DataBaseAccess.SetDataBaseAccType(SMes.Core.Utility.DataBaseType,System.String)">
+            <summary>
+            设置访问数据库的模式是什么类型。
+            </summary>
+            <param name="type"></param>
+            <param name="userId"></param>
+        </member>
+        <member name="M:SMes.Core.Service.DataBaseAccess.SetDataBaseAccName(SMes.Core.Config.ConnectionConfig,System.String)">
+            <summary>
+            设置访问数据库的对象，包括地址等
+            </summary>
+            <param name="dataBaseCon"></param>
+            <param name="userId"></param>
+        </member>
+        <!-- 对于成员“M:SMes.Core.Service.DataBaseAccess.GetConnectByCurrentAssemblyName(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:SMes.Core.Service.DataBaseAccess.GetConnectByCurrentAssemblyNameold(System.String)">
+            <summary>
+            根据当前访问的程序集，获取相应的连接数据源
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Service.DataBaseAccess.ChangeCurrentConnectName(System.String,System.String)">
+            <summary>
+            强制更改连接数据库的库名，比如改变为连接到 EPIDM，CHIPDM
+            </summary>
+            <param name="dataSourceName"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Service.DataBaseAccess.GetQueryData(System.String,System.String)">
+            <summary>
+            查询数据库信息，DataBaseAcType访问相应的数据库，支持单纯的sql
+            其他：{@=call调用函数返回游标，{?=call 调用函数返回字符串；例如：{@=call mes_chip_d3item_test_pkg.get_d3_chip_data('2018/02/04 00:00:00','2018/02/05 00:00:00')}
+            </summary>
+            <param name="sql">sql</param>
+            <param name="callingAssembly">调用的程序集，默认为空，如果是引用其他dll的话，则传入该参数</param>
+            <returns>返回数据表</returns>
+        </member>
+        <member name="M:SMes.Core.Service.DataBaseAccess.DBExecute(System.String,System.String)">
+            <summary>
+            执行数据库语句，DataBaseAcType访问相应的数据库，支持sql语句
+            其他：{@=call调用函数返回游标，{?=call 调用函数返回字符串；例如：{@=call mes_chip_d3item_test_pkg.get_d3_chip_data('2018/02/04 00:00:00','2018/02/05 00:00:00')}
+            </summary>
+            <param name="sql">sql语句</param>
+            <param name="callingAssembly">调用的程序集，默认为空，如果是引用其他dll的话，则传入该参数</param>
+        </member>
+        <member name="M:SMes.Core.Service.DataBaseAccess.DBExecuteOLD(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            批量执行多条数据库语句，DataBaseAcType访问相应的数据库,如果是调用存储过程或函数，则不能用这个方法。调用函数或方法，只能用单一语句
+            </summary>
+            <param name="sql"></param>
+            <param name="callingAssembly">调用的程序集，默认为空，如果是引用其他dll的话，则传入该参数</param>
+        </member>
+        <member name="M:SMes.Core.Service.DataBaseAccess.GetQueryDataWithTxn(System.String,System.String)">
+            <summary>
+            查询数据库信息，支持事务,DataBaseAcType访问相应的数据库，支持单纯的sql
+            其他：{@=call调用函数返回游标，{?=call 调用函数返回字符串；例如：{@=call mes_chip_d3item_test_pkg.get_d3_chip_data('2018/02/04 00:00:00','2018/02/05 00:00:00')}
+            </summary>
+            <param name="sql">sql语句</param>
+            <param name="callingAssembly">调用的程序集，默认为空，如果是引用其他dll的话，则传入该参数</param>
+            <returns>返回数据表</returns>
+        </member>
+        <member name="M:SMes.Core.Service.DataBaseAccess.DBExecuteWithTxn(System.String,System.String)">
+            <summary>
+            执行数据库语句，并不进行提交，需要搭配commit和rollback使用,DataBaseAcType访问相应的数据库，支持sql语句
+            其他：{@=call调用函数返回游标，{?=call 调用函数返回字符串；例如：{@=call mes_chip_d3item_test_pkg.get_d3_chip_data('2018/02/04 00:00:00','2018/02/05 00:00:00')}
+            </summary>
+            <param name="sql">sql</param>
+            <param name="callingAssembly">调用的程序集，默认为空，如果是引用其他dll的话，则传入该参数</param>
+        </member>
+        <member name="M:SMes.Core.Service.DataBaseAccess.TxnCommit(System.String)">
+            <summary>
+            执行事务的提交，搭配DBExecuteWithTxn，使用
+            </summary>
+            <param name="callingAssembly">调用的程序集，默认为空，如果是引用其他dll的话，则传入该参数</param>
+        </member>
+        <member name="M:SMes.Core.Service.DataBaseAccess.TxnRollback(System.String)">
+            <summary>
+            执行事务的回滚，搭配DBExecuteWithTxn，使用
+            </summary>
+            <param name="callingAssembly">调用的程序集，默认为空，如果是引用其他dll的话，则传入该参数</param>
+        </member>
+        <member name="M:SMes.Core.Service.DataBaseAccess.GetSysId(System.String)">
+            <summary>
+            获取系统表新生成的SID
+            </summary>
+            <param name="callingAssembly">调用的程序集，默认为空，如果是引用其他dll的话，则传入该参数</param>
+            <returns>系统表唯一性id</returns>
+        </member>
+        <member name="M:SMes.Core.Service.Connection.#ctor(SMes.Core.Config.ConnectionConfig)">
+            <summary>
+            使用存放系统初始化参数的ConnectionConfig类来初始化Connection类的新的空实例
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:SMes.Core.Service.Connection.CreateTransaction">
+            <summary>
+            新建Transaction类
+            </summary>
+            <returns>返回事务Transaction类</returns>
+        </member>
+        <member name="M:SMes.Core.Service.Connection.ExecuteNonQuery(SMes.Core.AppObj.Command,System.Int32,SMes.Core.AppObj.Transaction)">
+            <summary>
+            执行不返回结果集的数据库操作
+            </summary>
+            <param name="cmd">存放SQL语句的Command对象</param>
+            <param name="cmdType">执行的类型</param>
+            <param name="txn">事务对象</param>  
+        </member>
+        <member name="M:SMes.Core.Service.Connection.ExecuteReader(SMes.Core.AppObj.Command,System.Int32,SMes.Core.AppObj.Transaction)">
+            <summary>
+            执行返回结果集的数据库查询操作
+            </summary>
+            <param name="cmd">存放SQL语句的Command对象</param>
+            <param name="cmdType">执行的类型</param>
+            <param name="txn">事务对象</param>  
+            <returns>返回对结果集封装过的McsDataReader对象</returns>
+        </member>
+        <member name="M:SMes.Core.Service.Connection.Commit(SMes.Core.AppObj.Transaction)">
+            <summary>
+            执行事务的提交
+            </summary>
+        </member>
+        <member name="M:SMes.Core.Service.Connection.Rollback(SMes.Core.AppObj.Transaction)">
+            <summary>
+            执行事务的回滚
+            </summary>
+        </member>
+        <member name="M:SMes.Core.Service.Connection.doTransaction(SMes.Core.AppObj.Transaction,System.Boolean)">
+            <summary>
+            根据事务的执行类型来执行事务
+            </summary>
+            <param name="txn">事务对象</param>
+            <param name="type">事务执行类型:commit为提交,rollback为回滚</param>
+        </member>
+        <member name="M:SMes.Core.Service.Connection.Execute(SMes.Core.AppObj.Command,System.Int32,SMes.Core.AppObj.Transaction)">
+            <summary>
+            执行数据库操作
+            </summary>
+            <param name="cmd">存放SQL语句的Command对象</param>
+            <param name="cmdType">执行的类型</param>
+            <param name="args"></param>
+            <param name="txn">事务对象</param>
+            <returns>返回数据库执行的结果集</returns>
+        </member>
+        <member name="M:SMes.Core.Service.Connection.buildUrl(SMes.Core.AppObj.Command)">
+            <summary>
+            拼写向服务器发送请求的Url地址
+            </summary>
+            <param name="cmd">Command对象</param>
+            <returns>返回发送连接的Url值</returns>
+        </member>
+        <member name="M:SMes.Core.Service.Connection.Encode(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            对执行的SQL语句进行编码
+            </summary>
+            <param name="key">SQL语句</param>
+            <param name="keyValue">执行类型</param>
+            <param name="encoding">编码格式</param>
+            <returns>返回编码过请求服务器处理的URL地址</returns>
+        </member>
+        <member name="M:SMes.Core.Service.Connection.Send(System.String)">
+            <summary>
+            服务器通过请求地址返回SQL执行的结果集
+            </summary>
+            <param name="url">向服务器发送的请求地址</param>
+            <returns>返回从数据库中得到的结果集</returns>
+        </member>
+        <member name="M:SMes.Core.Config.CoreConfig.load">
+            <summary>
+            加载properties文件,此文件中存放系统初始化时需要的文件名称
+            </summary>
+        </member>
+        <member name="M:SMes.Core.Config.CoreConfig.load(SMes.Core.Config.ConnectionConfig)">
+            <summary>
+            加载properties文件,此文件中存放系统初始化时需要的文件名称
+            </summary>
+            <param name="cc">ConnectionConfig类</param>
+        </member>
+        <member name="M:SMes.Core.Config.CoreConfig.initializeMscConnection">
+            <summary>
+            加载配置文件,通过解析XML文件来获得系统初始化时的参数值:服务器的IP地址、服务器的端口地址、处理请求的服务器类、服务器连接超时时间、数据源名称和更新地址并将值赋给存放系统初始化的ConnectionConfig对象
+            </summary>
+            <param name="fileName">文件</param>
+            <remarks>
+            通过XPath来解析Xml文件,将文件的节点值赋给存放系统初始化信息的对象中
+            </remarks>
+        </member>
+        <member name="P:SMes.Core.Config.CoreConfig.ConnectionConfig">
+            <summary>
+            获取一个值，该值指示存放系统初始化参数的值
+            </summary>
+        </member>
+        <member name="M:SMes.Core.AppObj.SMesApplicationException.#ctor(System.Int32,System.String)">
+            <summary>
+            使用异常信息编码和异常信息内容来初始化McsApplicationException类的新的空实例。
+            </summary>
+            <param name="code">自定义的异常信息编码</param>
+            <param name="msg">异常信息编码对应的异常信息内容</param>
+        </member>
+        <member name="T:SMes.Core.AppObj.SMesSystemException">
+            <summary>
+            系统级异常信息类
+            </summary>
+        </member>
+        <member name="M:SMes.Core.AppObj.SMesSystemException.#ctor(System.Int32,System.String)">
+            <summary>
+            使用异常信息编码和异常信息内容来初始化McsSystemException类的新的空实例。
+            </summary>
+            <param name="code">自定义的异常信息编码</param>
+            <param name="msg">异常信息编码对应的异常信息内容</param>
+        </member>
+        <member name="T:SMes.Core.AppObj.SystemExceptionList">
+            <summary>
+            存放异常信息编码
+            </summary>
+        </member>
+        <member name="M:SMes.Core.Service.UploadFile.AddPostKey(System.String,System.Byte[])">
+            <summary>
+            Adds POST form variables to the request buffer.
+            HttpPostMode determines how parms are handled.
+            1 - UrlEncoded Form Variables. Uses key and value pairs (ie. "Name","Rick") to create URLEncoded content
+            2 - Multi-Part Forms - not supported
+            4 - XML block - Post a single XML block. Pass in as Key (1st Parm)
+            other - raw content buffer. Just assign to Key.
+            </summary>
+            <param name="Key">Key value or raw buffer depending on post type</param>
+            <param name="Value">Value to store. Used only in key/value pair modes</param>
+        </member>
+        <member name="M:SMes.Core.Service.UploadFile.AddPostKey(System.String)">
+            <summary>
+            Adds a fully self contained POST buffer to the request.
+            Works for XML or previously encoded content.
+            </summary>
+            <param name="PostBuffer"></param>
+        </member>
+        <member name="M:SMes.Core.Service.UploadFile.AddPostFile(System.String,System.String,System.String)">
+            <summary>
+            最后的路径如果1级，直接TEST，如果多级，这样写 XA/TEST
+            </summary>
+            <param name="Key"></param>
+            <param name="FileName"></param>
+            <param name="dirName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Service.UploadFile.ReadFileMimeType(System.String)">
+            <summary>
+            获取文件的MIME类型
+            </summary>
+            <param name="fileExtension">文件扩展名</param>
+            <returns>MIME类型</returns>
+        </member>
+        <member name="M:SMes.Core.Service.UploadFile.GetUrlStream(System.String,System.Net.HttpWebRequest)">
+            <summary>
+            Return a the result from an HTTP Url into a StreamReader.
+            Client code should call Close() on the returned object when done reading.
+            </summary>
+            <param name="Url">Url to retrieve.</param>
+            <param name="WebRequest">An HttpWebRequest object that can be passed in with properties preset.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Service.UploadFile.GetUrlStream(System.String)">
+            <summary>
+            Return a the result from an HTTP Url into a StreamReader.
+            Client code should call Close() on the returned object when done reading.
+            </summary>
+            <param name="Url">Url to retrieve.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Service.UploadFile.GetUrlStream(System.Net.HttpWebRequest)">
+            <summary>
+            Return a the result from an HTTP Url into a StreamReader.
+            Client code should call Close() on the returned object when done reading.
+            </summary>
+            <param name="Request">A Request object</param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Service.UploadFile.GetUrl(System.String)">
+            <summary>
+            Return a the result from an HTTP Url into a string.
+            </summary>
+            <param name="Url">Url to retrieve.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Service.UploadFile.GetUrlBytes(System.String)">
+            <summary>
+            Return a the result from an HTTP Url into a string.
+            </summary>
+            <param name="Url">Url to retrieve.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Service.UploadFile.GetUrlEvents(System.String,System.Int64)">
+            <summary>
+            Retrieves URL with events in the OnReceiveData event.
+            </summary>
+            <param name="Url"></param>
+            <param name="BufferSize"></param>
+            <returns></returns>
+        </member>
+        <member name="E:SMes.Core.Service.UploadFile.OnReceiveData">
+            <summary>
+            Fires progress events when using GetUrlEvents() to retrieve a URL.
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.PostMode">
+            <summary>
+            Determines how data is POSTed when cPostBuffer is set.
+            1 - UrlEncoded
+            2 - Multi-Part form vars
+            4 - XML (raw buffer content type: text/xml)
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.Username">
+            <summary>
+             User name used for Authentication. 
+             To use the currently logged in user when accessing an NTLM resource you can use "AUTOLOGIN".
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.Password">
+            <summary>
+            Password for Authentication.
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.ProxyAddress">
+            <summary>
+            Address of the Proxy Server to be used.
+            Use optional DEFAULTPROXY value to specify that you want to IE's Proxy Settings
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.ProxyBypass">
+            <summary>
+            Semicolon separated Address list of the servers the proxy is not used for.
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.ProxyUsername">
+            <summary>
+            Username for a password validating Proxy. Only used if the proxy info is set.
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.ProxyPassword">
+            <summary>
+            Password for a password validating Proxy. Only used if the proxy info is set.
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.Timeout">
+            <summary>
+            Timeout for the Web request in seconds. Times out on connection, read and send operations.
+            Default is 30 seconds.
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.ErrorMsg">
+            <summary>
+            Error Message if the Error Flag is set or an error value is returned from a method.
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.Error">
+            <summary>
+            Error flag if an error occurred.
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.ThrowExceptions">
+            <summary>
+            Determines whether errors cause exceptions to be thrown. By default errors 
+            are handled in the class and the Error property is set for error conditions.
+            (not implemented at this time).
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Service.UploadFile.HandleCookies">
+            <summary>
+            If set to a non-zero value will automatically track cookies. The number assigned is the cookie count.
+            </summary>
+        </member>
+        <member name="M:SMes.Core.ApplicationCache.GlobalCache.GetCurrentOrgLookUpValue(System.String)">
+            <summary>
+            slv.lookup_type_code,
+            slv.lookup_type_name,
+                                      slv.lookup_code,
+                                      slv.lookup_meanning,
+                                      slv.organization_id,
+                                      slv.organization_code,
+                                      slv.organization_name,
+                                      slv.order_by,
+                                      slv.attribute_category,
+                                     slv.attribute1,
+                                      slv.attribute2,
+                                      slv.attribute3,
+                                      slv.attribute4,
+                                      slv.attribute5,
+                                      slv.attribute6,
+                                      slv.attribute7,
+                                      slv.attribute8,
+                                      slv.attribute9,
+                                      slv.attribute10,
+                                      slv.attribute11,
+                                      slv.attribute12,
+                                      slv.attribute13,
+                                      slv.attribute14,
+                                      slv.attribute15
+            </summary>
+            <param name="lookupCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.AppObj.DataSourceAccess.#ctor(System.String,SMes.Core.Config.ConnectionConfig,System.String)">
+            <summary>
+            初始化构造每一个程序集对应的连接数据库选项
+            </summary>
+            <param name="assemblyName"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:SMes.Core.AppObj.DataSourceAccess.GetConnectConfig">
+            <summary>
+            获取当前的配置信息，方便修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.AppObj.DataSourceAccess.UpdateDataSource(SMes.Core.Config.ConnectionConfig,System.String)">
+            <summary>
+            更新数据库连接信息
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="F:SMes.Core.Utility.StrUtil.SQL_PLACEHOLDER">
+            <summary>
+            数据库字符串的填充符号，默认是{0}
+            </summary>
+        </member>
+        <member name="M:SMes.Core.Utility.StrUtil.ProcInput(System.String,System.Boolean)">
+            <summary>
+            返回根据条件拼凑的sql段
+            </summary>
+            <param name="input"></param>
+            <param name="isNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Utility.StrUtil.ValueToString(System.Object)">
+            <summary>
+            转换对象到字符串
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Utility.StrUtil.ValueToInt(System.Object)">
+            <summary>
+            转换对象到INT类型
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Utility.StrUtil.ValueToDecimal(System.Object)">
+            <summary>
+            转换对象到数字
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Utility.StrUtil.ValueToDouble(System.Object)">
+            <summary>
+            转换对象到Double类型
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Utility.StrUtil.BuildInSqlPara(System.Collections.Generic.List{System.String})">
+            <summary>
+            字符串列表合并成逗号隔开的字符串，带'',比如传进去A,B,C,D的List，返回字符串： 'A','B','C','D'
+            </summary>
+            <param name="paras"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Interface.IMesPlugin.Load">
+            <summary>
+            装载插件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Interface.IMesPlugin.UnLoad">
+            <summary>
+            卸载插件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SMes.Core.Interface.IMesPlugin.PluginName">
+            <summary>
+            插件名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SMes.Core.Interface.IMesPlugin.PluginDescription">
+            <summary>
+            插件描述
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SMes.Core.Interface.IMesPlugin.PluginAuthor">
+            <summary>
+            作者信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SMes.Core.Interface.IMesPlugin.Application">
+            <summary>
+            得到主程序实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Config.ApplicationConfig.GetProperty(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="isOnlyCache"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Config.ApplicationConfig.SetProperty(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:SMes.Core.Config.ApplicationConfig.SetProperty(SMes.Core.AppObj.UserInfo)">
+            <summary>
+            
+            </summary>
+            <param name="userinfo"></param>
+        </member>
+        <member name="M:SMes.Core.Config.ApplicationConfig.GetCurrentUser">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Utility.HttpUtility.UrlEncode(System.String,System.Text.Encoding)">
+            <summary>
+             对传入的字符串进行编码
+            </summary>
+            <param name="strSrc">字符串</param>
+            <param name="en">Encoding编码对象</param>
+            <returns>返回处理编码过的字符串</returns>
+        </member>
+        <member name="P:SMes.Core.Config.ConnectionConfig.Host">
+            <summary>
+            设置或获取一个值，该值指示服务器的IP地址
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Config.ConnectionConfig.Port">
+            <summary>
+            设置或获取一个值，该值指示服务器的端口地址
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Config.ConnectionConfig.RequestAccepter">
+            <summary>
+            设置或获取一个值，该值指示处理请求的服务器类
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Config.ConnectionConfig.Timeout">
+            <summary>
+             已过时,设置或获取一个值，该值指示服务器连接超时时间
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Config.ConnectionConfig.GlobalTimeout">
+            <summary>
+             设置或获取一个值，该值指示服务器连接超时时间
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Config.ConnectionConfig.DatasourceName">
+            <summary>
+             设置或获取一个值，该值指示数据源名称
+            </summary>
+        </member>
+        <member name="P:SMes.Core.Config.ConnectionConfig.UpdatingService">
+            <summary>
+            设置或获取一个值，该值指示更新文件的IP地址
+            </summary>
+        </member>
+        <member name="T:SMes.Core.AppObj.Command">
+            <summary>
+            存放SQL语句和执行类型,继承Hashtable
+            </summary>
+        </member>
+        <member name="M:SMes.Core.AppObj.Command.Clone">
+             <summary>
+             重写Hashtable的拷贝函数,用于存放需要执行的SQL语句和对应的类型
+             </summary>
+            <remarks>
+             类型例如:普通SQL语句、存储过程等等
+            </remarks>
+        </member>
+        <member name="M:SMes.Core.AppObj.Transaction.#ctor(SMes.Core.Service.Connection)">
+            <summary>
+            使用系统连接类来初始化Transaction类的新的空实例。
+            </summary>
+            <param name="conn"></param>
+        </member>
+        <member name="P:SMes.Core.AppObj.Transaction.TransactionId">
+            <summary>
+            设置或获取一个值,该值指示事务的ID号
+            </summary>
+        </member>
+        <member name="M:SMes.Core.Service.EncryptionService.EncryptByMD5(System.String)">
+            <summary>
+            输入一个字符串，对该字符串进行MD5加密
+            </summary>
+            <param name="input">需要加密的输入字符</param>
+            <returns>MD5加密后的输出值</returns>
+        </member>
+        <member name="M:SMes.Core.Service.EncryptionService.EncryptBySHA1(System.String)">
+            <summary>
+            输入一个字符串，对字符串进行SHA1加密
+            </summary>
+            <param name="input">需要加密的字符串</param>
+            <returns>SHA1加密后的输出值</returns>
+        </member>
+        <member name="M:SMes.Core.Service.EncryptionService.VerifyMD5(System.String,System.String)">
+            <summary>
+            校验MD5值
+            </summary>
+            <param name="input">需要校验的字符串</param>
+            <param name="hash">接受校验的Hash值</param>
+            <returns>True标识校验成功，hash为input的MD5值；False校验失败，hash不是input的MD5值</returns>
+        </member>
+        <member name="M:SMes.Core.Service.EncryptionService.VerifySHA1(System.String,System.String)">
+            <summary>
+            校验SHA1值
+            </summary>
+            <param name="input">需要校验的字符串</param>
+            <param name="hash">接受校验的Hash值</param>
+            <returns>True标识校验成功，hash为input的SHA1值；False校验失败，hash不是input的SHA1值</returns>
+        </member>
+        <member name="M:SMes.Core.Service.AppBaseService.GetLoginUserId">
+            <summary>
+            取得CIM Center传递的帐号，并且确认是否能被开启
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Core.Utility.ZipHelp.ZipFile(System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            ZIP:压缩单个文件
+            add yuangang by 2016-06-13
+            </summary>
+            <param name="FileToZip">需要压缩的文件（绝对路径）</param>
+            <param name="ZipedPath">压缩后的文件路径（绝对路径）</param>
+            <param name="ZipedFileName">压缩后的文件名称（文件名，默认 同源文件同名）</param>
+            <param name="CompressionLevel">压缩等级（0 无 - 9 最高，默认 5）</param>
+            <param name="BlockSize">缓存大小（每次写入文件大小，默认 2048）</param>
+            <param name="IsEncrypt">是否加密（默认 加密）</param>
+        </member>
+        <member name="M:SMes.Core.Utility.ZipHelp.ZipDirectory(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            ZIP：压缩文件夹
+            add yuangang by 2016-06-13
+            </summary>
+            <param name="DirectoryToZip">需要压缩的文件夹（绝对路径）</param>
+            <param name="ZipedPath">压缩后的文件路径（绝对路径）</param>
+            <param name="ZipedFileName">压缩后的文件名称（文件名，默认 同源文件夹同名）</param>
+            <param name="IsEncrypt">是否加密（默认 加密）</param>
+        </member>
+        <member name="M:SMes.Core.Utility.ZipHelp.ZipSetp(System.String,ICSharpCode.SharpZipLib.Zip.ZipOutputStream,System.String)">
+            <summary>
+            递归遍历目录
+            add yuangang by 2016-06-13
+            </summary>
+        </member>
+        <member name="M:SMes.Core.Utility.ZipHelp.UnZip(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            ZIP:解压一个zip文件
+            add yuangang by 2016-06-13
+            </summary>
+            <param name="ZipFile">需要解压的Zip文件（绝对路径）</param>
+            <param name="TargetDirectory">解压到的目录</param>
+            <param name="Password">解压密码</param>
+            <param name="OverWrite">是否覆盖已存在的文件</param>
+        </member>
+    </members>
+</doc>

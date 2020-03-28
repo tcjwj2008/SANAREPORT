@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<something-else-entirely>
+	<proxool>
+		<alias>SMES</alias>
+		<driver-url>jdbc:oracle:thin:@10.123.189.98:1521/WYMES</driver-url>
+		<driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+		<driver-properties>
+			<property name="user" value="XA_EPI" />
+			<property name="password" value="SANANCIMES" />
+		</driver-properties> 
+		<maximum-connection-count>100</maximum-connection-count> 
+    <maximum-active-time>6000000</maximum-active-time>
+    <house-keeping-sleep-time>120000</house-keeping-sleep-time>
+		<maximum-new-connections>10</maximum-new-connections> 
+		<prototype-count>5</prototype-count> 
+		<test-before-use>true</test-before-use>
+		<house-keeping-test-sql>select 1 from dual</house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>CHIP</alias>
+		<driver-url>jdbc:oracle:thin:@10.1.200.217:1521/CHIP_PROD</driver-url>
+		<driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+		<driver-properties>
+			<property name="user" value="CHIP" />
+			<property name="password" value="CHIP@^(.123" />
+		</driver-properties> 
+		<maximum-connection-count>100</maximum-connection-count> 
+    <maximum-active-time>6000000</maximum-active-time>
+    <house-keeping-sleep-time>120000</house-keeping-sleep-time>
+		<maximum-new-connections>10</maximum-new-connections> 
+		<prototype-count>5</prototype-count> 
+		<test-before-use>true</test-before-use>
+		<house-keeping-test-sql>select 1 from dual</house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>EPI</alias>
+		<driver-url>jdbc:oracle:thin:@10.1.200.221:1521/epi_prod</driver-url>
+		<driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+		<driver-properties>
+			<property name="user" value="EPI" />
+			<property name="password" value="EPIMES@^(.121" />
+		</driver-properties> 
+		<maximum-connection-count>100</maximum-connection-count> 
+	    <maximum-active-time>6000000</maximum-active-time>
+    <house-keeping-sleep-time>120000</house-keeping-sleep-time>
+		<maximum-new-connections>10</maximum-new-connections> 
+		<prototype-count>5</prototype-count> 
+		<test-before-use>true</test-before-use>
+		<house-keeping-test-sql>select 1 from dual</house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>CHIPDM</alias>
+		<driver-url>jdbc:sqlserver://10.123.188.188:1433;databasename=SAHRMIS</driver-url>
+		<driver-class>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver-class>
+		<driver-properties>
+			<property name="user" value="MJ" />
+			<property name="password" value="SAmj2017" />
+		</driver-properties> 
+		<maximum-connection-count>100</maximum-connection-count> 
+    <maximum-active-time>6000000</maximum-active-time>
+    <house-keeping-sleep-time>120000</house-keeping-sleep-time>
+		<maximum-new-connections>10</maximum-new-connections> 
+		<prototype-count>5</prototype-count> 
+	</proxool>
+	<proxool>
+		<alias>EPIDM</alias>
+		<driver-url>jdbc:oracle:thin:@10.1.200.221:1521/epi_rpt</driver-url>
+		<driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+		<driver-properties>
+			<property name="user" value="EPIDM" />
+			<property name="password" value="EPIDM@^(.122" />
+		</driver-properties> 
+		<maximum-connection-count>100</maximum-connection-count> 
+    <maximum-active-time>6000000</maximum-active-time>
+    <house-keeping-sleep-time>120000</house-keeping-sleep-time>
+		<maximum-new-connections>10</maximum-new-connections> 
+		<prototype-count>5</prototype-count> 
+		<test-before-use>true</test-before-use>
+		<house-keeping-test-sql>select 1 from dual</house-keeping-test-sql>
+	</proxool>
+</something-else-entirely> 

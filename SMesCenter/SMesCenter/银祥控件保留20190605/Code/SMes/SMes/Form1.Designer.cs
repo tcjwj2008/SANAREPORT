@@ -1,0 +1,435 @@
+﻿namespace SMes
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows 窗体设计器生成的代码
+
+        /// <summary>
+        /// 设计器支持所需的方法 - 不要
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+					this.components = new System.ComponentModel.Container();
+					System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+					System.Windows.Forms.WindowsFormsSynchronizationContext windowsFormsSynchronizationContext1 = new System.Windows.Forms.WindowsFormsSynchronizationContext();
+					System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+					System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+					System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+					this.buttonEx1 = new SMes.Controls.ButtonEx(this.components);
+					this.comboBoxEx1 = new SMes.Controls.ComboBoxEx(this.components);
+					this.lableEx1 = new SMes.Controls.LableEx(this.components);
+					this.textBoxEx1 = new SMes.Controls.TextBoxEx(this.components);
+					this.statusStripBarEx1 = new SMes.Controls.StatusStripBarEx();
+					this.buttonEx2 = new SMes.Controls.ButtonEx(this.components);
+					this.buttonEx3 = new SMes.Controls.ButtonEx(this.components);
+					this.dataGridViewEx1 = new SMes.Controls.DataGridViewEx(this.components);
+					this.Column1 = new SMes.Controls.DataGridViewTextBoxExColumn(this.components);
+					this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+					this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+					this.Column4 = new SMes.Controls.DataGridViewTextBoxExColumn(this.components);
+					this.Column5 = new SMes.Controls.DataGridViewTextBoxExColumn(this.components);
+					this.calendarButton1 = new SMes.Controls.CalendarButtonEx();
+					this.textBoxEx2 = new SMes.Controls.TextBoxEx(this.components);
+					this.lovButtonEx1 = new SMes.Controls.LovButtonEx();
+					this.buttonEx4 = new SMes.Controls.ButtonEx(this.components);
+					this.buttonEx5 = new SMes.Controls.ButtonEx(this.components);
+					this.panelEx1 = new SMes.Controls.PanelEx(this.components);
+					this.buttonEx7 = new SMes.Controls.ButtonEx(this.components);
+					this.checkComboBoxButtonEx1 = new SMes.Controls.CheckComboBoxButtonEx();
+					this.textBoxEx3 = new SMes.Controls.TextBoxEx(this.components);
+					this.buttonEx6 = new SMes.Controls.ButtonEx(this.components);
+					((System.ComponentModel.ISupportInitialize)(this.comboBoxEx1)).BeginInit();
+					((System.ComponentModel.ISupportInitialize)(this.dataGridViewEx1)).BeginInit();
+					((System.ComponentModel.ISupportInitialize)(this.panelEx1)).BeginInit();
+					this.panelEx1.SuspendLayout();
+					this.SuspendLayout();
+					// 
+					// buttonEx1
+					// 
+					this.buttonEx1.Location = new System.Drawing.Point(170, 5);
+					this.buttonEx1.Name = "buttonEx1";
+					this.buttonEx1.Size = new System.Drawing.Size(90, 25);
+					this.buttonEx1.TabIndex = 0;
+					this.buttonEx1.Values.Text = "buttonEx1";
+					this.buttonEx1.Click += new System.EventHandler(this.buttonEx1_Click);
+					// 
+					// comboBoxEx1
+					// 
+					this.comboBoxEx1.AlwaysActive = false;
+					this.comboBoxEx1.DataSourceType = SMes.Controls.AppObject.ComboBoxDataSourceType.SQL;
+					this.comboBoxEx1.DisplayMember = "NAME";
+					this.comboBoxEx1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+					this.comboBoxEx1.DropDownWidth = 192;
+					this.comboBoxEx1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+					this.comboBoxEx1.Location = new System.Drawing.Point(319, 91);
+					this.comboBoxEx1.MustNeeded = true;
+					this.comboBoxEx1.Name = "comboBoxEx1";
+					this.comboBoxEx1.Size = new System.Drawing.Size(192, 21);
+					this.comboBoxEx1.SourceCodeOrSql = "SELECT m.remark02 推移图,m.remark01 FROM mes_wpc_extenditem m WHERE m.class = \'Proce" +
+							"ssType\'";
+					this.comboBoxEx1.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.OrangeRed;
+					this.comboBoxEx1.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+					this.comboBoxEx1.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.LightGoldenrodYellow;
+					this.comboBoxEx1.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.Black;
+					this.comboBoxEx1.TabIndex = 1;
+					this.comboBoxEx1.ValueMember = "VALUE";
+					// 
+					// lableEx1
+					// 
+					this.lableEx1.AutoSize = false;
+					this.lableEx1.Font = new System.Drawing.Font("Arial", 10F);
+					this.lableEx1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
+					this.lableEx1.Location = new System.Drawing.Point(142, 33);
+					this.lableEx1.Name = "lableEx1";
+					this.lableEx1.Size = new System.Drawing.Size(100, 23);
+					this.lableEx1.Text = "lableEx1";
+					this.lableEx1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+					// 
+					// textBoxEx1
+					// 
+					this.textBoxEx1.AlwaysActive = false;
+					this.textBoxEx1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+					this.textBoxEx1.IsMultipleRow = false;
+					this.textBoxEx1.Location = new System.Drawing.Point(305, 156);
+					this.textBoxEx1.LovFormReturnValue = ((System.Collections.Generic.List<string>)(resources.GetObject("textBoxEx1.LovFormReturnValue")));
+					this.textBoxEx1.MultipleRowValue = ((System.Collections.Generic.List<string>)(resources.GetObject("textBoxEx1.MultipleRowValue")));
+					this.textBoxEx1.MustNeeded = false;
+					this.textBoxEx1.Name = "textBoxEx1";
+					this.textBoxEx1.Size = new System.Drawing.Size(135, 22);
+					this.textBoxEx1.StateActive.Border.Color1 = System.Drawing.Color.OrangeRed;
+					this.textBoxEx1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+					this.textBoxEx1.StateCommon.Back.Color1 = System.Drawing.Color.White;
+					this.textBoxEx1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+					this.textBoxEx1.StateCommon.Border.Rounding = 2;
+					this.textBoxEx1.TabIndex = 3;
+					this.textBoxEx1.Text = "textBoxEx1";
+					// 
+					// statusStripBarEx1
+					// 
+					this.statusStripBarEx1.BackColor = System.Drawing.SystemColors.Control;
+					this.statusStripBarEx1.Context = windowsFormsSynchronizationContext1;
+					this.statusStripBarEx1.Dock = System.Windows.Forms.DockStyle.Bottom;
+					this.statusStripBarEx1.IsBusy = false;
+					this.statusStripBarEx1.IsPageQuery = false;
+					this.statusStripBarEx1.Location = new System.Drawing.Point(0, 370);
+					this.statusStripBarEx1.Name = "statusStripBarEx1";
+					this.statusStripBarEx1.Navigator = null;
+					this.statusStripBarEx1.NMax = 0;
+					this.statusStripBarEx1.PageCount = 0;
+					this.statusStripBarEx1.PageCurrent = 0;
+					this.statusStripBarEx1.PageSize = 10000;
+					this.statusStripBarEx1.QuerySql = "";
+					this.statusStripBarEx1.Size = new System.Drawing.Size(795, 22);
+					this.statusStripBarEx1.TabIndex = 5;
+					// 
+					// buttonEx2
+					// 
+					this.buttonEx2.Location = new System.Drawing.Point(478, 162);
+					this.buttonEx2.Name = "buttonEx2";
+					this.buttonEx2.Size = new System.Drawing.Size(90, 25);
+					this.buttonEx2.TabIndex = 6;
+					this.buttonEx2.Values.Text = "buttonEx2";
+					this.buttonEx2.Click += new System.EventHandler(this.buttonEx2_Click);
+					// 
+					// buttonEx3
+					// 
+					this.buttonEx3.Location = new System.Drawing.Point(478, 228);
+					this.buttonEx3.Name = "buttonEx3";
+					this.buttonEx3.Size = new System.Drawing.Size(90, 25);
+					this.buttonEx3.TabIndex = 7;
+					this.buttonEx3.Values.Text = "buttonEx3";
+					this.buttonEx3.Click += new System.EventHandler(this.buttonEx3_Click);
+					// 
+					// dataGridViewEx1
+					// 
+					this.dataGridViewEx1.AllowUserToAddRows = false;
+					this.dataGridViewEx1.AllowUserToDeleteRows = false;
+					this.dataGridViewEx1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+					this.dataGridViewEx1.ErrorRowList = ((System.Collections.Generic.List<int>)(resources.GetObject("dataGridViewEx1.ErrorRowList")));
+					this.dataGridViewEx1.IsMergeColumn = false;
+					this.dataGridViewEx1.Location = new System.Drawing.Point(12, 82);
+					this.dataGridViewEx1.Name = "dataGridViewEx1";
+					this.dataGridViewEx1.Size = new System.Drawing.Size(269, 141);
+					this.dataGridViewEx1.TabIndex = 11;
+					// 
+					// Column1
+					// 
+					this.Column1.Alterable = true;
+					this.Column1.DataType = SMes.Controls.AppObject.DataGridViewColumnDataType.NONE;
+					dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+					dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+					this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+					this.Column1.HeaderText = "Column1";
+					this.Column1.IsShowTimeDetail = false;
+					this.Column1.LovParameter = null;
+					this.Column1.MustNeeded = false;
+					this.Column1.Name = "Column1";
+					this.Column1.PopType = SMes.Controls.AppObject.DataGridViewColumnPopType.NONE;
+					this.Column1.PopTypeSide = System.Windows.Forms.LeftRightAlignment.Right;
+					this.Column1.ValidationType = SMes.Controls.AppObject.DataValidationType.NONE;
+					// 
+					// Column2
+					// 
+					this.Column2.HeaderText = "Column2";
+					this.Column2.Name = "Column2";
+					// 
+					// Column3
+					// 
+					this.Column3.HeaderText = "Column3";
+					this.Column3.Name = "Column3";
+					// 
+					// Column4
+					// 
+					this.Column4.Alterable = true;
+					this.Column4.DataType = SMes.Controls.AppObject.DataGridViewColumnDataType.NONE;
+					dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+					dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+					this.Column4.DefaultCellStyle = dataGridViewCellStyle2;
+					this.Column4.HeaderText = "Column4";
+					this.Column4.IsShowTimeDetail = false;
+					this.Column4.LovParameter = null;
+					this.Column4.MustNeeded = false;
+					this.Column4.Name = "Column4";
+					this.Column4.PopType = SMes.Controls.AppObject.DataGridViewColumnPopType.NONE;
+					this.Column4.PopTypeSide = System.Windows.Forms.LeftRightAlignment.Right;
+					this.Column4.ValidationType = SMes.Controls.AppObject.DataValidationType.NONE;
+					// 
+					// Column5
+					// 
+					this.Column5.Alterable = true;
+					this.Column5.DataType = SMes.Controls.AppObject.DataGridViewColumnDataType.NONE;
+					dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+					dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+					this.Column5.DefaultCellStyle = dataGridViewCellStyle3;
+					this.Column5.HeaderText = "Column5";
+					this.Column5.IsShowTimeDetail = false;
+					this.Column5.LovParameter = null;
+					this.Column5.MustNeeded = false;
+					this.Column5.Name = "Column5";
+					this.Column5.PopType = SMes.Controls.AppObject.DataGridViewColumnPopType.NONE;
+					this.Column5.PopTypeSide = System.Windows.Forms.LeftRightAlignment.Right;
+					this.Column5.ValidationType = SMes.Controls.AppObject.DataValidationType.NONE;
+					// 
+					// calendarButton1
+					// 
+					this.calendarButton1.BackColor = System.Drawing.Color.Transparent;
+					this.calendarButton1.BindTextBoxEx = this.textBoxEx1;
+					this.calendarButton1.IsShowTimeDetail = true;
+					this.calendarButton1.Location = new System.Drawing.Point(446, 156);
+					this.calendarButton1.Name = "calendarButton1";
+					this.calendarButton1.Size = new System.Drawing.Size(23, 23);
+					this.calendarButton1.TabIndex = 15;
+					// 
+					// textBoxEx2
+					// 
+					this.textBoxEx2.AlwaysActive = false;
+					this.textBoxEx2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+					this.textBoxEx2.IsMultipleRow = false;
+					this.textBoxEx2.Location = new System.Drawing.Point(170, 253);
+					this.textBoxEx2.LovFormReturnValue = ((System.Collections.Generic.List<string>)(resources.GetObject("textBoxEx2.LovFormReturnValue")));
+					this.textBoxEx2.MultipleRowValue = ((System.Collections.Generic.List<string>)(resources.GetObject("textBoxEx2.MultipleRowValue")));
+					this.textBoxEx2.MustNeeded = false;
+					this.textBoxEx2.Name = "textBoxEx2";
+					this.textBoxEx2.Size = new System.Drawing.Size(149, 22);
+					this.textBoxEx2.StateActive.Border.Color1 = System.Drawing.Color.OrangeRed;
+					this.textBoxEx2.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+					this.textBoxEx2.StateCommon.Back.Color1 = System.Drawing.Color.White;
+					this.textBoxEx2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+					this.textBoxEx2.StateCommon.Border.Rounding = 2;
+					this.textBoxEx2.TabIndex = 17;
+					this.textBoxEx2.Text = "textBoxEx2";
+					// 
+					// lovButtonEx1
+					// 
+					this.lovButtonEx1.BackColor = System.Drawing.Color.Transparent;
+					this.lovButtonEx1.Location = new System.Drawing.Point(325, 253);
+					this.lovButtonEx1.LovParameter = null;
+					this.lovButtonEx1.Name = "lovButtonEx1";
+					this.lovButtonEx1.Size = new System.Drawing.Size(23, 23);
+					this.lovButtonEx1.TabIndex = 18;
+					this.lovButtonEx1.TargetTextBoxEx = this.textBoxEx2;
+					// 
+					// buttonEx4
+					// 
+					this.buttonEx4.Location = new System.Drawing.Point(46, 31);
+					this.buttonEx4.Name = "buttonEx4";
+					this.buttonEx4.Size = new System.Drawing.Size(90, 25);
+					this.buttonEx4.TabIndex = 20;
+					this.buttonEx4.Values.Text = "buttonEx4";
+					this.buttonEx4.Click += new System.EventHandler(this.buttonEx4_Click);
+					// 
+					// buttonEx5
+					// 
+					this.buttonEx5.Location = new System.Drawing.Point(325, 198);
+					this.buttonEx5.Name = "buttonEx5";
+					this.buttonEx5.Size = new System.Drawing.Size(90, 25);
+					this.buttonEx5.TabIndex = 22;
+					this.buttonEx5.Values.Text = "buttonEx5";
+					this.buttonEx5.Click += new System.EventHandler(this.buttonEx5_Click);
+					// 
+					// panelEx1
+					// 
+					this.panelEx1.AutoScroll = true;
+					this.panelEx1.Controls.Add(this.buttonEx7);
+					this.panelEx1.Controls.Add(this.checkComboBoxButtonEx1);
+					this.panelEx1.Controls.Add(this.textBoxEx3);
+					this.panelEx1.Location = new System.Drawing.Point(281, 5);
+					this.panelEx1.Name = "panelEx1";
+					this.panelEx1.Size = new System.Drawing.Size(274, 80);
+					this.panelEx1.TabIndex = 24;
+					// 
+					// buttonEx7
+					// 
+					this.buttonEx7.Location = new System.Drawing.Point(67, 112);
+					this.buttonEx7.Name = "buttonEx7";
+					this.buttonEx7.Size = new System.Drawing.Size(90, 25);
+					this.buttonEx7.TabIndex = 2;
+					this.buttonEx7.Values.Text = "buttonEx7";
+					this.buttonEx7.Click += new System.EventHandler(this.buttonEx7_Click);
+					// 
+					// checkComboBoxButtonEx1
+					// 
+					this.checkComboBoxButtonEx1.BackColor = System.Drawing.Color.Transparent;
+					this.checkComboBoxButtonEx1.DataSourceType = SMes.Controls.AppObject.ComboBoxDataSourceType.NONE;
+					this.checkComboBoxButtonEx1.InitValue = "GaN(AIX19),GaN(AIX42)";
+					this.checkComboBoxButtonEx1.ListHeigh = 150;
+					this.checkComboBoxButtonEx1.Location = new System.Drawing.Point(212, 21);
+					this.checkComboBoxButtonEx1.Name = "checkComboBoxButtonEx1";
+					this.checkComboBoxButtonEx1.Size = new System.Drawing.Size(27, 27);
+					this.checkComboBoxButtonEx1.SourceCodeOrSql = "SELECT \'FALSE\', m.remark01,m.remark02 FROM mes_wpc_extenditem m WHERE m.class = \'" +
+							"ProdEqpType\'";
+					this.checkComboBoxButtonEx1.SplitStr = ",";
+					this.checkComboBoxButtonEx1.TabIndex = 1;
+					this.checkComboBoxButtonEx1.TargetTextBoxEx = this.textBoxEx3;
+					this.checkComboBoxButtonEx1.ValueAsChar = "";
+					this.checkComboBoxButtonEx1.ValueAsNumber = "";
+					// 
+					// textBoxEx3
+					// 
+					this.textBoxEx3.AlwaysActive = false;
+					this.textBoxEx3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+					this.textBoxEx3.IsMultipleRow = false;
+					this.textBoxEx3.Location = new System.Drawing.Point(30, 24);
+					this.textBoxEx3.LovFormReturnValue = ((System.Collections.Generic.List<string>)(resources.GetObject("textBoxEx3.LovFormReturnValue")));
+					this.textBoxEx3.MultipleRowValue = ((System.Collections.Generic.List<string>)(resources.GetObject("textBoxEx3.MultipleRowValue")));
+					this.textBoxEx3.MustNeeded = false;
+					this.textBoxEx3.Name = "textBoxEx3";
+					this.textBoxEx3.Size = new System.Drawing.Size(176, 22);
+					this.textBoxEx3.StateActive.Border.Color1 = System.Drawing.Color.OrangeRed;
+					this.textBoxEx3.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+					this.textBoxEx3.StateCommon.Back.Color1 = System.Drawing.Color.White;
+					this.textBoxEx3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
+											| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+					this.textBoxEx3.StateCommon.Border.Rounding = 2;
+					this.textBoxEx3.TabIndex = 0;
+					this.textBoxEx3.Text = "GaN(AIX19),GaN(AIX42)";
+					// 
+					// buttonEx6
+					// 
+					this.buttonEx6.Location = new System.Drawing.Point(56, 253);
+					this.buttonEx6.Name = "buttonEx6";
+					this.buttonEx6.Size = new System.Drawing.Size(90, 25);
+					this.buttonEx6.TabIndex = 26;
+					this.buttonEx6.Values.Text = "buttonEx6";
+					this.buttonEx6.Click += new System.EventHandler(this.buttonEx6_Click);
+					// 
+					// Form1
+					// 
+					this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+					this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+					this.ClientSize = new System.Drawing.Size(795, 392);
+					this.Controls.Add(this.buttonEx6);
+					this.Controls.Add(this.panelEx1);
+					this.Controls.Add(this.buttonEx5);
+					this.Controls.Add(this.buttonEx4);
+					this.Controls.Add(this.lovButtonEx1);
+					this.Controls.Add(this.textBoxEx2);
+					this.Controls.Add(this.calendarButton1);
+					this.Controls.Add(this.dataGridViewEx1);
+					this.Controls.Add(this.buttonEx3);
+					this.Controls.Add(this.buttonEx2);
+					this.Controls.Add(this.statusStripBarEx1);
+					this.Controls.Add(this.textBoxEx1);
+					this.Controls.Add(this.lableEx1);
+					this.Controls.Add(this.comboBoxEx1);
+					this.Controls.Add(this.buttonEx1);
+					this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+					this.Name = "Form1";
+					this.Text = "u";
+					this.Load += new System.EventHandler(this.Form1_Load);
+					((System.ComponentModel.ISupportInitialize)(this.comboBoxEx1)).EndInit();
+					((System.ComponentModel.ISupportInitialize)(this.dataGridViewEx1)).EndInit();
+					((System.ComponentModel.ISupportInitialize)(this.panelEx1)).EndInit();
+					this.panelEx1.ResumeLayout(false);
+					this.panelEx1.PerformLayout();
+					this.ResumeLayout(false);
+					this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private Controls.ButtonEx buttonEx1;
+        private Controls.LableEx lableEx1;
+        private Controls.TextBoxEx textBoxEx1;
+        private Controls.StatusStripBarEx statusStripBarEx1;
+        private Controls.ButtonEx buttonEx2;
+        private Controls.ButtonEx buttonEx3;
+        private Controls.DataGridViewEx dataGridViewEx1;
+        private Controls.CalendarButtonEx calendarButton1;
+        private Controls.TextBoxEx textBoxEx2;
+        private Controls.LovButtonEx lovButtonEx1;
+        private Controls.ButtonEx buttonEx4;
+        public Controls.ComboBoxEx comboBoxEx1;
+        private Controls.ButtonEx buttonEx5;
+        private Controls.PanelEx panelEx1;
+        private Controls.ButtonEx buttonEx6;
+        private Controls.TextBoxEx textBoxEx3;
+        private Controls.CheckComboBoxButtonEx checkComboBoxButtonEx1;
+        private Controls.ButtonEx buttonEx7;
+        private Controls.DataGridViewTextBoxExColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private Controls.DataGridViewTextBoxExColumn Column4;
+        private Controls.DataGridViewTextBoxExColumn Column5;
+
+    }
+}
+

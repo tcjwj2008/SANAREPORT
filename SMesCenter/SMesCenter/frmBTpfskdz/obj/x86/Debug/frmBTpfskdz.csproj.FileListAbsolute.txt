@@ -1,0 +1,8 @@
+F:\qiu\银祥版报表中心\银祥版报表中心\银祥版报表中心\SMesCenter\SMesCenter\frmBTpfskdz\bin\Debug\frmBTpfskdz.exe
+F:\qiu\银祥版报表中心\银祥版报表中心\银祥版报表中心\SMesCenter\SMesCenter\frmBTpfskdz\bin\Debug\frmBTpfskdz.pdb
+F:\qiu\银祥版报表中心\银祥版报表中心\银祥版报表中心\SMesCenter\SMesCenter\frmBTpfskdz\obj\x86\Debug\frmBTpfskdz.csprojResolveAssemblyReference.cache
+F:\qiu\银祥版报表中心\银祥版报表中心\银祥版报表中心\SMesCenter\SMesCenter\frmBTpfskdz\obj\x86\Debug\frmBTpfskdz.Form1.resources
+F:\qiu\银祥版报表中心\银祥版报表中心\银祥版报表中心\SMesCenter\SMesCenter\frmBTpfskdz\obj\x86\Debug\frmBTpfskdz.Properties.Resources.resources
+F:\qiu\银祥版报表中心\银祥版报表中心\银祥版报表中心\SMesCenter\SMesCenter\frmBTpfskdz\obj\x86\Debug\frmBTpfskdz.csproj.GenerateResource.Cache
+F:\qiu\银祥版报表中心\银祥版报表中心\银祥版报表中心\SMesCenter\SMesCenter\frmBTpfskdz\obj\x86\Debug\frmBTpfskdz.exe
+F:\qiu\银祥版报表中心\银祥版报表中心\银祥版报表中心\SMesCenter\SMesCenter\frmBTpfskdz\obj\x86\Debug\frmBTpfskdz.pdb

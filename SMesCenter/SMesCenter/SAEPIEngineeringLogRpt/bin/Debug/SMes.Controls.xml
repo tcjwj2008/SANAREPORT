@@ -1,0 +1,1328 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SMes.Controls</name>
+    </assembly>
+    <members>
+        <member name="F:SMes.Controls.LableEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.LableEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.LableEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.GroupBoxEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.GroupBoxEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.GroupBoxEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.ExtendForm.BaseForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.ExtendForm.BaseForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SMes.Controls.ExtendForm.BaseForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.AppForm.FindContentForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.AppForm.FindContentForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SMes.Controls.AppForm.FindContentForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.TextBoxEx.OnReadOnlyChanged(System.EventArgs)">
+            <summary>
+            当控件为只读是背景色设为银灰色，否则为白色
+            </summary>
+            <param name="e">e</param>
+        </member>
+        <member name="F:SMes.Controls.TextBoxEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.TextBoxEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.TextBoxEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.TextBoxEx.LovFormReturnValue">
+            <summary>
+            lov的返回值
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.TextBoxEx.MustNeeded">
+            <summary>
+            是否必输
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.LovFormEx.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.LovFormEx.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SMes.Controls.LovFormEx.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.LovFormEx.SearchRows(System.String)">
+            <summary>
+            进行查询
+            </summary>
+            <param name="searchValue"></param>
+        </member>
+        <member name="M:SMes.Controls.LovFormEx.InitDataGridView">
+             <summary>
+            初始化表格
+             </summary>
+        </member>
+        <member name="F:SMes.Controls.DataGridViewComboBoxExColumn.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewComboBoxExColumn.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewComboBoxExColumn.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewComboBoxExColumn.GetCallingAssembly">
+            <summary>
+            获取需要访问数据库的程序集名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SMes.Controls.DataGridViewComboBoxExColumn.CallingAssembly">
+            <summary>
+            设置需要访问数据库的程序集
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.DataGridViewComboBoxExColumn.DataSourceType">
+             <summary>
+            初始化绑定值的数据来源 
+             </summary>
+        </member>
+        <member name="P:SMes.Controls.DataGridViewComboBoxExColumn.SourceCodeOrSql">
+            <summary>
+            初始化绑定时使用的数据来源，支持SQL，系统定义的快速编码
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.ComboBoxEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.ComboBoxEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.ComboBoxEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.ComboBoxEx.GetCallingAssembly">
+            <summary>
+            获取需要访问数据库的程序集名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.ComboBoxEx.ComBoxBindData">
+            <summary>
+            初始化下拉的数据列表
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.ComboBoxEx.OnEnabledChanged(System.EventArgs)">
+            <summary>
+            重写该事件设置ENABLE改变时背景色的改变值
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:SMes.Controls.ComboBoxEx.ChangeBackColor">
+            <summary>
+            根据ENABLE，MUSTBEINPUT等属性设置背景色
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.ComboBoxEx.CallingAssembly">
+            <summary>
+            设置需要访问数据库的程序集
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.ComboBoxEx.DataSourceType">
+             <summary>
+            初始化绑定值的数据来源 
+             </summary>
+        </member>
+        <member name="P:SMes.Controls.ComboBoxEx.SourceCodeOrSql">
+            <summary>
+            初始化绑定时使用的数据来源，支持SQL，系统定义的快速编码
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.ComboBoxEx.MustNeeded">
+            <summary>
+            是否必输
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.PanelEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.PanelEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.PanelEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.NavigatorEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.GetCallingAssembly">
+            <summary>
+            获取需要访问数据库的程序集名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.AddCustButton(System.String,System.EventHandler)">
+            <summary>
+            增加额外的按钮，按钮名称，点击的事件。显示为默认图标
+            </summary>
+            <param name="buttonText"></param>
+            <param name="buttonDelegate"></param>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.tsbQuery_Click(System.Object,System.EventArgs)">
+            <summary>
+            进行查询
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.DoQuery">
+            <summary>
+            当sql不为空的时候往这里进行查询的动作
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.BuildQuerySql(System.String,System.Int32)">
+            <summary>
+            限制行
+            </summary>
+            <param name="sql"></param>
+            <param name="rowLimit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.PageQuery(System.String)">
+            <summary>
+            分页查询的时候用
+            </summary>
+            <param name="querySql"></param>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.DoExport">
+            <summary>
+            当sql不为空的时候往这里进行查询的动作
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.BuildExportQueryTotalRowsCountSql(System.String)">
+            <summary>
+            获得总行数
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.BuildExportPageQuerySql(System.String,System.Int32,System.Int32)">
+            <summary>
+            获得每一页的数据sql
+            </summary>
+            <param name="sql"></param>
+            <param name="page"></param>
+            <param name="pageCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.NavigatorEx.IsLongNumber(System.String)">
+            <summary>
+            判断是否是超过10位的数字
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="E:SMes.Controls.NavigatorEx.OnAllCheckClicked">
+            点击全选按钮
+        </member>
+        <member name="P:SMes.Controls.NavigatorEx.CancelOperation">
+            <summary>
+            是否取消进一步操作，比如保存、删除前的验证是否取消往下执行
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.NavigatorEx.CallingAssembly">
+            <summary>
+            设置需要访问数据库的程序集
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.NavigatorEx.StatusStrip">
+            <summary>
+            状态栏
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.NavigatorEx.DataGridView">
+            <summary>
+            对应的表格数据
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.NavigatorEx.LimtQueryRows">
+            <summary>
+            限定展示的条数，默认是10000
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.NavigatorEx.PageQueryRows">
+            <summary>
+            限定导出分页的条数，默认是10000
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.LovButtonEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.LovButtonEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.LovButtonEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.LovButtonEx.GetCallingAssembly">
+            <summary>
+            获取需要访问数据库的程序集名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SMes.Controls.LovButtonEx.CallingAssembly">
+            <summary>
+            设置需要访问数据库的程序集
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.DataGridViewEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.GetCallingAssembly">
+            <summary>
+            获取需要访问数据库的程序集名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.ClearHeaderColor">
+            <summary>
+            清除表头的设置颜色
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.SetHeaderColor(System.Int32,System.Int32,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            设置表头的颜色，行号，被合并的第几行(0,1,2),背景色，前景色
+            </summary>
+            <param name="colIndex"></param>
+            <param name="mergeIndex"></param>
+            <param name="backColor"></param>
+            <param name="ForeColor"></param>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.setMergeHeaderBackColor(System.Int32,System.Int32,System.Drawing.Color)">
+            <summary>
+            得到设置的指定的背景颜色
+            </summary>
+            <param name="colIndex"></param>
+            <param name="MergeIndex"></param>
+            <param name="defaultColor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.setMergeHeaderForeColor(System.Int32,System.Int32,System.Drawing.Color)">
+            <summary>
+            得到指定的前景色
+            </summary>
+            <param name="colIndex"></param>
+            <param name="MergeIndex"></param>
+            <param name="defaultColor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.GetMergeHeaderBackColor(System.Int32,System.Int32)">
+            <summary>
+            得到合并的表头的背景色,mergeIndex从0,1,2开始
+            </summary>
+            <param name="colIndex"></param>
+            <param name="mergeIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.GetMergeHeaderForeColor(System.Int32,System.Int32)">
+            <summary>
+            得到合并的表头的前景色,mergeIndex从0,1,2开始
+            </summary>
+            <param name="colIndex"></param>
+            <param name="mergeIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.getLeftColSameText(System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            找到当前行的最左边的相同合并行数，相同层次，的相同值
+            </summary>
+            <param name="columnIndexStart"></param>
+            <param name="startRowCount"></param>
+            <param name="startRowIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.getRightColSameText(System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            找到当前行的最右边的相同合并行数，相同层次，的相同值
+            </summary>
+            <param name="columnIndexStart"></param>
+            <param name="startRowCount"></param>
+            <param name="startRowIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.getColTextData(System.Int32)">
+            <summary>
+            得到某列的表头行值，用|隔开
+            </summary>
+            <param name="columnIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            重写增加键盘事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.SetDataSourceTable(System.Data.DataTable)">
+            <summary>
+            加载数据，从datatable来
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.DataGridRowAdd">
+            <summary>
+            数据增加一行
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.DataGridPreSave">
+            <summary>
+            要开始进行保存
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.ResetSaveSqlBeforeCommit">
+            <summary>
+            初始化保存前的sql
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.RowDataSave(System.Boolean@,System.String@)">
+            <summary>
+            执行保存的动作，对新增的和更新的进行保存
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.cellValidate(System.Int32,System.Int32,System.String@)">
+            <summary>
+            根据单元格，以及单元格设置的数据类型做校验
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="colIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.SetCellStateOnRowAdd(System.Int32,System.Boolean)">
+            <summary>
+            为新增的行的单元格设置颜色,以及是否可以编辑
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="isNewAddRow"></param>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewEx.rowIndexHasIn(System.Int32)">
+            <summary>
+            检查是否包含在change或者add 列表
+            </summary>
+            <param name="rowIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SMes.Controls.DataGridViewEx.IsMergeColumn">
+            <summary>
+            是否合并单元格,格式为Merge|col1|col2
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.DataGridViewEx.CallingAssembly">
+            <summary>
+            设置需要访问数据库的程序集
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.DataGridViewEx.MaxMergeRowCount">
+            <summary>
+            得到最大的合并行的层次数
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.DataGridViewEx.ErrorRowList">
+            <summary>
+            存储出错行的index，然后系统会自动对出错行做颜色标量显示
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.ButtonEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.ButtonEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.ButtonEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.MonthCalendarEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.MonthCalendarEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.MonthCalendarEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.MonthCalendarEx.IsShowTimePicker">
+            <summary>
+            是否显示时分秒的精确选择
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.MesPaletteEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.MesPaletteEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.MesPaletteEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.MesPaletteEx.MesFont">
+            <summary>
+            设置或获取一个值，该值指示MES界面字体大小。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.DataGridViewTextBoxExColumn.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewTextBoxExColumn.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewTextBoxExColumn.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.NumericUpDownEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.NumericUpDownEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.NumericUpDownEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.NumericUpDownEx.MustNeeded">
+            <summary>
+            是否必输
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.DataGridViewComboBoxExCell.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewComboBoxExCell.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewComboBoxExCell.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.Utility.DataGridViewContentMenuService.DgvExToExcel(SMes.Controls.DataGridViewEx)">
+            <summary>       
+            /// 此方法关键之处是使用Range一次存储内存中的多行多列数据到Excel
+            此方法效率明显高的多，推荐使用
+            </summary>
+            <param name="gridView"></param>
+        </member>
+        <member name="M:SMes.Controls.Utility.DataGridViewContentMenuService.GetWindowThreadProcessId(System.IntPtr,System.Int32@)">
+            <summary>
+            结束EXCEL.EXE进程的方法
+            </summary>
+            <param name="m_objExcel">EXCEL对象</param>
+        </member>
+        <member name="F:SMes.Controls.RichTextBoxEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.RichTextBoxEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.RichTextBoxEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.RichTextBoxEx.OnReadOnlyChanged(System.EventArgs)">
+            <summary>
+            当控件为只读是背景色设为银灰色，否则为白色
+            </summary>
+            <param name="e">e</param>
+        </member>
+        <member name="P:SMes.Controls.RichTextBoxEx.MustNeeded">
+            <summary>
+            是否必输
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.ExtendForm.BaseQueryForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.ExtendForm.BaseQueryForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SMes.Controls.ExtendForm.BaseQueryForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.ExtendForm.BaseQueryForm.NeedRememberQueryParamer">
+            <summary>
+            是否要记得查询条件，第二次打开页面时，自动填充
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.ExtendForm.BaseQueryForm.QueryFlag">
+            <summary>
+            是否已经按下查询按钮
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.ExtendForm.BaseQueryForm.QuerySql">
+            <summary>
+            根据用户输入的查询条件，生成的最后查询sql
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.DataGridViewExRow._rowStatus">
+            <summary>
+            指示改行是什么装，新增，编辑，删除，正常
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.DataGridViewExRow.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewExRow.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewExRow.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.DataGridViewExRow.RowStatus">
+            <summary>
+            指示改行是什么装，新增，编辑，删除，正常
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.AppObject.LovFormExParameter.QuerySql">
+            <summary>
+            查询的sql，只能一个参数值
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.CheckComboBoxButtonEx.GetCallingAssembly">
+            <summary>
+            获取需要访问数据库的程序集名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SMes.Controls.CheckComboBoxButtonEx.BindData">
+            <summary>
+            绑定数据
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.CheckComboBoxButtonEx.IniSelectedValue">
+            <summary>
+            根据给定的初始化字符串，选中相应的选项
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.CheckComboBoxButtonEx.SetValues">
+            <summary>
+            根据选中项，设置值内容
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.CheckComboBoxButtonEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.CheckComboBoxButtonEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.CheckComboBoxButtonEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.CheckComboBoxButtonEx.DataSourceType">
+             <summary>
+            初始化绑定值的数据来源 
+             </summary>
+        </member>
+        <member name="P:SMes.Controls.CheckComboBoxButtonEx.SourceCodeOrSql">
+            <summary>
+            初始化绑定时使用的数据来源，支持SQL，系统定义的快速编码，注意，本控件的sql比较特殊要3列，比如 SELECT 'FALSE', m.remark01,m.remark02 FROM mes_wpc_extenditem m WHERE m.class = 'ProdEqpType'
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.CheckComboBoxButtonEx.CallingAssembly">
+            <summary>
+            设置需要访问数据库的程序集
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.CheckComboBoxButtonEx.SplitStr">
+            <summary>
+            选中项之间的间隔符
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.CheckComboBoxButtonEx.InitValue">
+            <summary>
+            使用CODE和间隔符号拼接成的初始化值
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.CheckComboBoxButtonEx.ValueAsNumber">
+            <summary>
+            把值拼成 xx,xx,xx 的形式，可以直接放到SQL的IN语句中使用
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.CheckComboBoxButtonEx.ValueAsChar">
+            <summary>
+            把值拼成 'xx','xx','xx' 的形式，可以直接放到SQL的IN语句中使用
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.CheckComboBoxButtonEx.ValueList">
+            <summary>
+            获得选中的值的值列表
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.CheckComboBoxButtonEx.ListHeigh">
+            <summary>
+            下拉列表的高度
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.ToolStripEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.ToolStripEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.ToolStripEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.RadioButtonEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.RadioButtonEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.RadioButtonEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.CalendarButtonEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.CalendarButtonEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.CalendarButtonEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.AppObject.DGVRowUpdate.RowIndex">
+            <summary>
+            行号，默认-1
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.AppObject.DGVRowUpdate.ReceiveValueIndex">
+            <summary>
+            接收值得行号，默认-1
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.AppObject.DGVRowUpdate.ReceiveValue">
+            <summary>
+            接收新增或更新行要回更新的行
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.AppObject.DGVRowUpdate.CommitSql">
+            <summary>
+            提交的sql
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.SplitContainerEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.SplitContainerEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.SplitContainerEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.MultipleRowButtonEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.MultipleRowButtonEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.MultipleRowButtonEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:SMes.Controls.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.Add">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.AllCheck">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.BtnClear">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.BtnQuery">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.CalendarBtn">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.CalendarBtnDisable">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.CheckComboBoxBtnDisable">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.CheckComboBoxBtnDown">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.CheckComboBoxBtnNormal">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.Delete">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.Details">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.Edit">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.Export">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.FileUpload">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.FirstPage">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.Import">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.Info">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.LastPage">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.loader">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.MulDataBtn">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.MultipleDown">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.MultipleNormal">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.MultipleNormalDisable">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.NextPage">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.PrePage">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.Query">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.Save">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.SearchBtn">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.Properties.Resources.SearchBtnDisable">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.MultirowInputForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.MultirowInputForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SMes.Controls.MultirowInputForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.AppForm.ShowSqlForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.AppForm.ShowSqlForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SMes.Controls.AppForm.ShowSqlForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.AppObject.LovType.NONE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.AppObject.LovType.VALUE">
+            <summary>
+            值输入是回传值，弹出框选择
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.AppObject.LovType.CALENDAR">
+            <summary>
+            日期类的LOV
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.AppObject.LovType.FILEUPLOAD">
+            <summary>
+            文件上传方式
+            </summary>
+        </member>
+        <member name="T:SMes.Controls.AppObject.ComboBoxDataSourceType">
+            <summary>
+            ComboBox初始化类型
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.AppObject.ComboBoxDataSourceType.NONE">
+            <summary>
+            无初始化
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.AppObject.ComboBoxDataSourceType.SQL">
+            <summary>
+            以传入SQL的方式初始化
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.AppObject.ComboBoxDataSourceType.SQLWITHNULL">
+            <summary>
+            一传入SQL的方式初始化，同时在备选项中添加空项
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.AppObject.ComboBoxDataSourceType.LOOKUP">
+            <summary>
+            快速编码配置
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.AppObject.ComboBoxDataSourceType.LOOKUPWITHNULL">
+            <summary>
+            快速编码配置，并可以为空
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.StatusStripBarEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.StatusStripBarEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.StatusStripBarEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.StatusStripBarEx.GetCallingAssembly">
+            <summary>
+            获取需要访问数据库的程序集名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:SMes.Controls.StatusStripBarEx._pageSize">
+            <summary>
+            每页显示记录数
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.StatusStripBarEx.Bind">
+            <summary>
+            翻页控件数据绑定的方法
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.StatusStripBarEx.CallingAssembly">
+            <summary>
+            设置需要访问数据库的程序集
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.StatusStripBarEx.Navigator">
+            <summary>
+            查询的按钮
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.StatusStripBarEx.QuerySql">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.StatusStripBarEx.PageSize">
+            <summary>
+            每页显示记录数
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.StatusStripBarEx.NMax">
+            <summary>
+            总记录数
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.StatusStripBarEx.PageCount">
+            <summary>
+            页数=总记录数/每页显示记录数
+            </summary>
+        </member>
+        <member name="P:SMes.Controls.StatusStripBarEx.PageCurrent">
+            <summary>
+            当前页号
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.DataGridViewTextBoxExCell.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewTextBoxExCell.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.DataGridViewTextBoxExCell.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.CheckBoxEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:SMes.Controls.CheckBoxEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:SMes.Controls.CheckBoxEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:SMes.Controls.Utility.ControlHelper.QueryParameters">
+            <summary>
+            记录查询的字段数值
+            </summary>
+        </member>
+    </members>
+</doc>
